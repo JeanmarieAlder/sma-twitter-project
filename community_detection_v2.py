@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Load the graph from tweet_sample_v2.graph
-G = nx.read_edgelist('tweet_sample_v2.graph', nodetype=int)
+G = nx.read_edgelist('tweet_sample_v3.graph', nodetype=int)
 
 # Load the CSV file into df_words DataFrame
 df_words = pd.read_csv('df_words_sample.csv')
