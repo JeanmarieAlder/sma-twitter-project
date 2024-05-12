@@ -12,6 +12,8 @@ def generate_graph(df_words):
 
     Parameters:
     - df_words (pandas.DataFrame): A DataFrame containing information about words in each tweet.
+    Returns:
+    - df_words: Same dataframe, with correct "words" column.
     """
     print("generate_graph()")
 
@@ -43,3 +45,5 @@ def generate_graph(df_words):
     with open('temp/tweet.graph', 'w') as file:
         for edge in edges:
             file.write(f"{edge[0]} {edge[1]}\n")
+
+    return df_words

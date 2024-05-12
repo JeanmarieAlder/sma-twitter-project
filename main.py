@@ -1,8 +1,10 @@
 import pandas as pd
 
 from utils import check_tmp_folder_existing
+from utils.community_detection import generate_communities
 from utils.graph import generate_graph
 from utils.preprocessing import preprocess_tweets
+from utils.result_analysis import compute_nmi
 
 def main():
     """
@@ -42,7 +44,7 @@ def main():
     # 2. Graph generation
     print()
     print("Graph Generation")
-    generate_graph(df_words)
+    df_words = generate_graph(df_words)
 
 
     # 3. Graph persistence
@@ -53,10 +55,12 @@ def main():
     # 4. Apply community detection
     print()
     print("Community Detection")
+    partition = generate_communities(df_words)
 
     # 5. Analyse results
     print()
     print("Analyse results")
+    nmi = compute_nmi(partition, df_words)
 
 
 if __name__ == "__main__":
