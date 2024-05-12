@@ -178,3 +178,5 @@ pyrightconfig.json
 # Custom ignores:
 
 covid19_tweets.csv
+
+temp/*

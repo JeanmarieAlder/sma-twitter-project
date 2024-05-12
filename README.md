@@ -10,12 +10,14 @@ This project aims to analyze a collection of tweets stored in a CSV file. The go
 
 To get started with the Tweet Analysis, follow these steps:
 
-1. Create a virtual environment named `venv` in the project directory. Adapth the command ```python``` if needed (python3, py):
+1. Download input CSV file containing the tweets. It can be downloaded [on Kaggle](https://www.kaggle.com/datasets/gpreda/covid19-tweets?resource=download). Place the csv file inside the root folder of the project. The file should be named ```covid19_tweets.csv```.
+
+2. Create a virtual environment named `venv` in the project directory. Adapth the command ```python``` if needed (python3, py):
    ```bash
    python -m venv venv
    ```
 
-2. Activate the virtual environment. On Windows, you can activate it with:
+3. Activate the virtual environment. On Windows, you can activate it with:
    ```bash
    venv\Scripts\activate
    ```
@@ -24,12 +26,12 @@ To get started with the Tweet Analysis, follow these steps:
    source venv/bin/activate
    ```
 
-3. Install the required dependencies using pip:
+4. Install the required dependencies using pip:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Once the dependencies are installed, you can run the program by executing the `main.py` script:
+5. Once the dependencies are installed, you can run the program by executing the `main.py` script:
    ```bash
    python main.py
    ```

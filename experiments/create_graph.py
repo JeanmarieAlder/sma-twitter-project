@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the CSV file into df_words DataFrame
-df_words = pd.read_csv('df_words.csv')
+df_words = pd.read_csv('experiments/df_words.csv')
 
 # Display the DataFrame
 print(df_words)
