@@ -91,7 +91,10 @@ def preprocess_tweets(df):
 
     # Extract words from the 'text' column of filtered_df
     df_words = pd.DataFrame({'words': filtered_df['text'].str.split()})
-    
+
+    # Add the 'user_location' column to df_words
+    df_words['user_location'] = filtered_df['user_location']
+
     # Save df_words to a temporary CSV file inside 'temp' folder.
     df_words.to_csv('temp/df_words.csv', index=False)
 
