@@ -36,7 +36,7 @@ def generate_communities(df_words):
         communities[community_id].append(node)
 
     # Words to count occurrences for
-    mental_health_words = ["anxiety", "depression", "stress", "happiness", "sadness"]
+    mental_health_words = ["happy", "sad"]
 
     # Count occurrences of words in each community
     word_counts = defaultdict(lambda: defaultdict(int))

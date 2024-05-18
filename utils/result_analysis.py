@@ -30,7 +30,7 @@ def compute_nmi(partition, df_words):
         communities[community_id].append(node)
 
     # Words to count occurrences for
-    mental_health_words = ["anxiety", "depression", "stress", "happiness", "sadness"]
+    mental_health_words = ["happy", "sad"]
 
     # Count occurrences of words in each community
     word_counts = defaultdict(lambda: defaultdict(int))
@@ -51,19 +51,19 @@ def compute_nmi(partition, df_words):
         print()
 
 
-    # Get the true classes (known classes) based on the words ["anxiety", "depression", "stress", "happiness", "sadness"]
+    # Get the true classes (known classes) based on the words ["happy", "sad"]
     true_classes = []
     for index, row in df_words.iterrows():
         tweet_words = eval(row['words'])
         tweet_class = 'None'
         for word in tweet_words:
-            if word in ["anxiety", "depression", "stress", "happiness", "sadness"]:
+            if word in ["happy", "sad"]:
                 tweet_class = word
                 break
         true_classes.append(tweet_class)
 
     # Convert the true classes to integers
-    true_classes_int = [["anxiety", "depression", "stress", "happiness", "sadness"].index(c) if c != 'None' else -1 for c in true_classes]
+    true_classes_int = [["happy", "sad"].index(c) if c != 'None' else -1 for c in true_classes]
 
     # Convert the partition to a list of labels
     partition_labels = [partition[node] for node in G.nodes()]
@@ -104,7 +104,7 @@ def analyze_unclassified_tweets(partition, df_words):
         communities[community_id].append(node)
 
     # Words to filter out to get unclassified tweets.
-    mental_health_words = ["anxiety", "depression", "stress", "happiness", "sadness"]
+    mental_health_words = ["happy", "sad"]
 
     # Initialize dictionaries to count total and unclassified tweets in each community
     total_tweet_counts = defaultdict(int)

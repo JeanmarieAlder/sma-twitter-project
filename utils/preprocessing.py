@@ -34,9 +34,7 @@ stop_words = ['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you'
 #     "mentalillness", "mentalhealth", "wellbeing", "copingmechanism", "emotionalregulation", 
 #     "selfawareness", "copingstrategies", "socialsupport"
 # ]
-mental_health_words = [
-    "anxiety", "depression", "stress", "happiness", "sadness"
-]
+mental_health_words = ["happy", "sad"]
 
 # Download english words to filter tweets later.
 nltk_download('words')
@@ -81,14 +79,20 @@ def preprocess_tweets(df):
     # Clean the 'text' column
     df['text'] = df['text'].apply(clean_text)
 
-    # Filter tweets containing mental health words
-    filtered_df = df[df['text'].str.contains('|'.join(mental_health_words), regex=True)]
+    # Extract words from the 'text' column
+    df['words'] = df['text'].str.split()
 
-    # Get tweets that do not contain mental health words
-    non_mental_health_df = df[~df['text'].str.contains('|'.join(mental_health_words), regex=True)]
+    # Filter tweets containing exact matches to mental health words
+    filtered_df = df[df['words'].apply(lambda words: any(word in words for word in mental_health_words))]
 
-    # Sample 200 tweets from non_mental_health_df
-    non_mental_health_sample = non_mental_health_df.sample(n=200, random_state=69)
+    # Get tweets that do not contain mental health words and have at least 4 words
+    non_mental_health_df = df[
+        (~df['words'].apply(lambda words: any(word in words for word in mental_health_words))) & 
+        (df['words'].apply(len) >= 4)
+    ]
+
+    # Sample n tweets from non_mental_health_df
+    non_mental_health_sample = non_mental_health_df.sample(n=10, random_state=69)
 
     # Concatenate the filtered_df with the non_mental_health_sample
     combined_df = pd.concat([filtered_df, non_mental_health_sample], ignore_index=True)
