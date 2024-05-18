@@ -84,18 +84,47 @@ def preprocess_tweets(df):
     # Filter tweets containing mental health words
     filtered_df = df[df['text'].str.contains('|'.join(mental_health_words), regex=True)]
 
-    # Here, we previously reseted index, but now we actually want to keep it,
-    # as it will be used to link with user location if needed.
-    # Reset index of filtered_df
-    filtered_df.reset_index(drop=True, inplace=True)
+    # Get tweets that do not contain mental health words
+    non_mental_health_df = df[~df['text'].str.contains('|'.join(mental_health_words), regex=True)]
 
-    # Extract words from the 'text' column of filtered_df
-    df_words = pd.DataFrame({'words': filtered_df['text'].str.split()})
+    # Sample 200 tweets from non_mental_health_df
+    non_mental_health_sample = non_mental_health_df.sample(n=200, random_state=69)
+
+    # Concatenate the filtered_df with the non_mental_health_sample
+    combined_df = pd.concat([filtered_df, non_mental_health_sample], ignore_index=True)
+
+    # Reset index of the combined DataFrame
+    combined_df.reset_index(drop=True, inplace=True)
+
+    # Extract words from the 'text' column of combined_df
+    df_words = pd.DataFrame({'words': combined_df['text'].str.split()})
 
     # Add the 'user_location' column to df_words
-    df_words['user_location'] = filtered_df['user_location']
-
+    df_words['user_location'] = combined_df['user_location']
+    
     # Save df_words to a temporary CSV file inside 'temp' folder.
     df_words.to_csv('temp/df_words.csv', index=False)
+
+    # Count words
+    word_counts = {}
+    for text in df['text']:
+        words = text.split()
+        for word in words:
+            if word in word_counts:
+                word_counts[word] += 1
+            else:
+                word_counts[word] = 1
+
+    # Create a dictionary to store the counts of mental health words
+    mental_health_counts = {}
+
+    # Populate the mental_health_counts dictionary with counts from word_counts
+    for word in mental_health_words:
+        mental_health_counts[word] = word_counts.get(word, 0)
+
+    # Print the count of each mental health word
+    print("Count of mental health words: ")
+    for word, count in mental_health_counts.items():
+        print(f"{word}: {count}")
 
     return df_words

@@ -79,3 +79,52 @@ def compute_nmi(partition, df_words):
     print("Normalized Mutual Information (NMI):", nmi)
 
     return nmi
+
+
+def analyze_unclassified_tweets(partition, df_words):
+    """
+    Analyze and print tweets that do not contain mental health words.
+
+    This function loads the graph from 'temp/tweet.graph', identifies nodes (tweets)
+    that do not contain any of the specified mental health words, and prints their
+    IDs, words, and community IDs.
+
+    Parameters:
+    - partition (dict): A dictionary mapping each node to its corresponding community ID.
+    - df_words (pandas.DataFrame): A DataFrame containing information about words in each tweet.
+    """
+    print("analyze_unclassified_tweets()")
+
+    # Load the graph from tweet.graph
+    G = nx.read_edgelist('temp/tweet.graph', nodetype=int)
+
+    # Organize nodes by community
+    communities = defaultdict(list)
+    for node, community_id in partition.items():
+        communities[community_id].append(node)
+
+    # Words to filter out to get unclassified tweets.
+    mental_health_words = ["anxiety", "depression", "stress", "happiness", "sadness"]
+
+    # Initialize dictionaries to count total and unclassified tweets in each community
+    total_tweet_counts = defaultdict(int)
+    unclassified_tweet_counts = defaultdict(int)
+
+    # Identify and print tweets that do not contain mental health words
+    for node in G.nodes():
+        tweet_words = eval(df_words.at[node, 'words'])
+        community = df_words.at[node, 'community']
+        total_tweet_counts[community] += 1
+        if not any(word in tweet_words for word in mental_health_words):
+            unclassified_tweet_counts[community] += 1
+            print(f"ID: {node}, Words: {tweet_words}, Community: {community}")
+
+    # Print the total number of tweets inside each community
+    print("\nTotal number of tweets in each community:")
+    for community, count in total_tweet_counts.items():
+        print(f"Community {community}: {count} tweets")
+
+    # Print the number of unclassified tweets inside each community
+    print("\nNumber of tweets without mental health words in each community:")
+    for community, count in unclassified_tweet_counts.items():
+        print(f"Community {community}: {count} tweets")

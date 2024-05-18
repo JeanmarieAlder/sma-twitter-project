@@ -4,7 +4,7 @@ from utils import check_tmp_folder_existing
 from utils.community_detection import generate_communities
 from utils.graph import generate_graph
 from utils.preprocessing import preprocess_tweets
-from utils.result_analysis import compute_nmi
+from utils.result_analysis import analyze_unclassified_tweets, compute_nmi
 
 def main():
     """
@@ -55,12 +55,13 @@ def main():
     # 4. Apply community detection
     print()
     print("Community Detection")
-    partition = generate_communities(df_words)
+    partition, df_words = generate_communities(df_words)
 
     # 5. Analyse results
     print()
-    print("Analyse results")
+    print("Results Analysis")
     nmi = compute_nmi(partition, df_words)
+    analyze_unclassified_tweets(partition, df_words)
 
 
 if __name__ == "__main__":
