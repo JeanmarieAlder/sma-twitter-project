@@ -2,7 +2,7 @@ import pandas as pd
 
 from utils import check_tmp_folder_existing
 from utils.community_detection import generate_communities
-from utils.graph import generate_graph
+from utils.graph import generate_graph, add_node_to_graph
 from utils.preprocessing import preprocess_tweets
 from utils.result_analysis import analyze_unclassified_tweets, compute_nmi
 
@@ -39,7 +39,7 @@ def main():
         raise SystemExit(1)
     
     # get dataframe of tweet words, ready for graph creation.
-    df_words = preprocess_tweets(df)
+    df_words, df_additional_words = preprocess_tweets(df)
 
     # 2. Graph generation
     print()
@@ -56,6 +56,10 @@ def main():
     print()
     print("Community Detection")
     partition, df_words = generate_communities(df_words)
+
+    # 4.5. Add Tweet to Classify to Graph
+    add_node_to_graph(df_words, df_additional_words.iloc[3])
+
 
     # 5. Analyse results
     print()
