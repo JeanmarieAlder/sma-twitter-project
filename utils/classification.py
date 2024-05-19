@@ -55,13 +55,16 @@ def classify_tweets(df_words, df_test, partition):
         # Determine the best community for the new tweet using modularity gain
         community_names = df_words['community'].unique()
         modularity_gains = {}
+        original_modularity = None
 
         for community in community_names:
-            modularity_gains[community] = compute_modularity_gain(G_copy, new_tweet_id, community, partition_copy)
+            modularity_gains[community], original_modularity = compute_modularity_gain(
+                G_copy, new_tweet_id, community, partition_copy, original_modularity
+            )
             # print(f"Community: {community}, Modularity Gain: {modularity_gains[community]}")
 
         best_community = max(modularity_gains, key=modularity_gains.get)
-        # print(f"Tweet ID: {new_tweet_id}, Best Community: {best_community}")
+        print(f"Tweet words: {new_tweet_words}, Best Community: {best_community}")
 
         # Update df_test with the new tweet's community
         df_test.at[index, 'community'] = best_community
@@ -79,7 +82,7 @@ def classify_tweets(df_words, df_test, partition):
     return df_test
 
 
-def compute_modularity_gain(G_copy, node, community, partition):
+def compute_modularity_gain(G_copy, node, community, partition, original_modularity):
     """
     Compute the modularity gain of adding a node to a specific community.
 
@@ -92,10 +95,11 @@ def compute_modularity_gain(G_copy, node, community, partition):
     Returns:
     - float: The modularity gain.
     """
-    original_modularity = community_louvain.modularity(partition, G_copy)
+    if original_modularity is None:
+        original_modularity = community_louvain.modularity(partition, G_copy)
 
     # Add the node to the specified community
     partition[node] = community
     new_modularity = community_louvain.modularity(partition, G_copy)
 
-    return new_modularity - original_modularity
+    return new_modularity - original_modularity, original_modularity
