@@ -1,14 +1,13 @@
 import os
 
-def check_tmp_folder_existing():
+def check_folder_existing(name):
     """
     Check if the temporary directory exists. If not, create it.
 
-    This function checks if the 'temp' directory exists in the current working directory.
-    If the directory does not exist, it creates it. The 'temp' directory is commonly used
-    for storing temporary files.
+    This function checks if the directory exists in the current working directory.
+    If the directory does not exist, it creates it.
     """
-    temp_dir = 'temp'
-    if not os.path.exists(temp_dir):
+    dir_to_check = name
+    if not os.path.exists(dir_to_check):
         # If it doesn't exist, create it
-        os.makedirs(temp_dir)
+        os.makedirs(dir_to_check)

@@ -1,40 +1,16 @@
-import os
+import emoji
 import pandas as pd
 
 from nltk import download as nltk_download
 from nltk.corpus import words
 from re import sub as re_sub
+from re import findall as re_findall
+from utils.constants import mental_health_words, stop_words
 
 
-# Stop words list
-stop_words = ['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', "you're", "you've", "you'll", "you'd",
-              'your', 'yours', 'yourself', 'yourselves', 'he', 'him', 'his', 'himself', 'she', "she's", 'her', 'hers',
-              'herself', 'it', "it's", 'its', 'itself', 'they', 'them', 'their', 'theirs', 'themselves', 'what', 'which',
-              'who', 'whom', 'this', 'that', "that'll", 'these', 'those', 'am', 'is', 'are', 'was', 'were', 'be', 'been',
-              'being', 'have', 'has', 'had', 'having', 'do', 'does', 'did', 'doing', 'a', 'an', 'the', 'and', 'but', 'if',
-              'or', 'because', 'as', 'until', 'while', 'of', 'at', 'by', 'for', 'with', 'about', 'against', 'between',
-              'into', 'through', 'during', 'before', 'after', 'above', 'below', 'to', 'from', 'up', 'down', 'in', 'out',
-              'on', 'off', 'over', 'under', 'again', 'further', 'then', 'once', 'here', 'there', 'when', 'where', 'why',
-              'how', 'all', 'any', 'both', 'each', 'few', 'more', 'most', 'other', 'some', 'such', 'no', 'nor', 'not',
-              'only', 'own', 'same', 'so', 'than', 'too', 'very', 's', 't', 'can', 'will', 'just', 'don', "don't",
-              'should', "should've", 'now', 'd', 'll', 'm', 'o', 're', 've', 'y', 'ain', 'aren', "aren't", 'couldn',
-              "couldn't", 'didn', "didn't", 'doesn', "doesn't", 'hadn', "hadn't", 'hasn', "hasn't", 'haven', "haven't",
-              'isn', "isn't", 'ma', 'mightn', "mightn't", 'mustn', "mustn't", 'needn', "needn't", 'shan', "shan't",
-              'shouldn', "shouldn't", 'wasn', "wasn't", 'weren', "weren't", 'won', "won't", 'wouldn', "wouldn't"]
 
-# Mental health related words
-# TODO: Choose final mental health words array. Currently smaller for faster tests.
-# mental_health_words = [
-#     "anxiety", "depression", "stress", "happiness", "sadness", "therapy", "counseling", 
-#     "support", "resilience", "coping", "wellness", "recovery", "selfcare", "empowerment", 
-#     "hope", "optimism", "isolation", "loneliness", "selfesteem", "motivation", "mindfulness", 
-#     "meditation", "psychologist", "psychiatrist", "trauma", "ptsd", "bipolar", "schizophrenia", 
-#     "ocd", "panic", "medication", "selfharm", "suicidal", "supportgroup", "socialanxiety", 
-#     "phobia", "trigger", "recovery", "adjustment", "acceptance", "cognitivebehavioraltherapy", 
-#     "mentalillness", "mentalhealth", "wellbeing", "copingmechanism", "emotionalregulation", 
-#     "selfawareness", "copingstrategies", "socialsupport"
-# ]
-mental_health_words = ["happy", "sad"]
+
+
 
 # Download english words to filter tweets later.
 nltk_download('words')
@@ -73,8 +49,59 @@ def clean_text(text):
     return text
 
 
+def extract_emojis(text):
+    """
+    Extract emojis from the input text.
+
+    Parameters:
+    - text (str): Input text containing emojis.
+
+    Returns:
+    - list: List of emojis extracted from the text.
+    """
+    emoji_list = []
+    for e in emoji.EMOJI_DATA:
+        if e in text and e not in emoji_list:
+            emoji_list.append(e)
+    return emoji_list
+
+
+
+def get_non_mental_health_tweets(df):
+    """
+    Filter non-mental health tweets from the DataFrame that are long enough.
+
+    Parameters:
+    - df (pandas.DataFrame): DataFrame containing tweet information.
+
+    Returns:
+    - pandas.DataFrame: DataFrame containing non-mental health tweets with at least 4 words.
+    """
+    return df[
+        (~df['words'].apply(lambda words: any(word in words for word in mental_health_words))) & 
+        (df['words'].apply(len) >= 4)
+    ]
+
+
+def get_sample_tweets(df, nsize):
+    return df.sample(n=nsize, random_state=69)
+
+
 def preprocess_tweets(df):
+    """
+    Preprocess tweets DataFrame by cleaning text, extracting emojis, and filtering tweets.
+    
+    Parameters:
+    - df (pandas.DataFrame): Input DataFrame containing tweet data.
+
+    Returns:
+    - df (pandas.DataFrame): Processed input DataFrame (slightly modified with new columns).
+    - df_words (pandas.DataFrame): DataFrame containing tweets for the initial community detection.
+    """
     print("preprocess_tweets()")
+
+    # Extract emojis from the 'text' column
+    df['emojis'] = df['text'].apply(extract_emojis)
 
     # Clean the 'text' column
     df['text'] = df['text'].apply(clean_text)
@@ -82,17 +109,17 @@ def preprocess_tweets(df):
     # Extract words from the 'text' column
     df['words'] = df['text'].str.split()
 
+    # Concatenate emojis into the 'words' column
+    df['words'] = df.apply(lambda row: row['words'] + row['emojis'], axis=1)
+    
     # Filter tweets containing exact matches to mental health words
     filtered_df = df[df['words'].apply(lambda words: any(word in words for word in mental_health_words))]
 
     # Get tweets that do not contain mental health words and have at least 4 words
-    non_mental_health_df = df[
-        (~df['words'].apply(lambda words: any(word in words for word in mental_health_words))) & 
-        (df['words'].apply(len) >= 4)
-    ]
+    non_mental_health_df = get_non_mental_health_tweets(df)
 
     # Sample n tweets from non_mental_health_df
-    non_mental_health_sample = non_mental_health_df.sample(n=10, random_state=69)
+    non_mental_health_sample = get_sample_tweets(non_mental_health_df, 0)
 
     # Concatenate the filtered_df with the non_mental_health_sample
     combined_df = pd.concat([filtered_df, non_mental_health_sample], ignore_index=True)
@@ -131,4 +158,25 @@ def preprocess_tweets(df):
     for word, count in mental_health_counts.items():
         print(f"{word}: {count}")
 
-    return df_words
+    return df, df_words
+
+
+def load_tweets():
+    """
+    Load tweets from the input CSV file.
+
+    Returns:
+    - pandas.DataFrame: DataFrame containing tweet information.
+    """
+    df = pd.DataFrame([])
+    try:
+        # Load the CSV file
+        df = pd.read_csv('covid19_tweets.csv')
+        print("Successfully loaded Tweets. Sample:")
+        print(df.head())
+    except Exception as e:
+        print(e)
+        print("Couldn't load tweets. Make sure to download them and place them in the root folder. More information about this in the readme file.")
+        raise SystemExit(1)
+
+    return df

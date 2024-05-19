@@ -4,6 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import networkx as nx
 
+from utils.constants import mental_health_words
+
 
 def generate_communities(df_words):
     """
@@ -35,8 +37,6 @@ def generate_communities(df_words):
     for node, community_id in partition.items():
         communities[community_id].append(node)
 
-    # Words to count occurrences for
-    mental_health_words = ["happy", "sad"]
 
     # Count occurrences of words in each community
     word_counts = defaultdict(lambda: defaultdict(int))
@@ -66,12 +66,15 @@ def generate_communities(df_words):
 
     df_words['community'] = df_words.index.map(get_community)
 
+    # Update partition to use community names instead of numerical IDs
+    partition_named = {node: community_names[community_id] for node, community_id in partition.items()}
+
     print(df_words[['words', 'community']])
 
     # Draw the graph with each community having a dedicated node color
-    node_colors = [partition[node] for node in G.nodes()]
-    nx.draw(G, with_labels=True, node_color=node_colors, cmap=plt.cm.tab10, width=0.2)
-    print("Please close the graph to continue the process...")
-    plt.show()
+    # node_colors = [partition[node] for node in G.nodes()]
+    # nx.draw(G, with_labels=True, node_color=node_colors, cmap=plt.cm.tab10, width=0.2)
+    # print("Please close the graph to continue the process...")
+    # plt.show()
 
-    return(partition, df_words)
+    return(partition_named, df_words)
