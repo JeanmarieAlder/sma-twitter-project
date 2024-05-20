@@ -72,7 +72,7 @@ def classify_tweets(df_words, df_test, partition):
     # Print all rows of df_test with columns "words" and "community"
     # print(df_test[['words', 'community']])
 
-    # Save df_words to a temporary CSV file inside 'output' folder.
+    # Save df_words to a result CSV file inside 'output' folder.
     now = datetime.now().strftime("%Y%m%d%H%M")
     check_folder_existing("output")
     output_file = f'output/{now}_mod_gain_output.csv'
