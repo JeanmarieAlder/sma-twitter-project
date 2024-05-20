@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the CSV file into df_words DataFrame
-df_words = pd.read_csv('experiments/df_words.csv')
+df_words = pd.read_csv('df_words.csv')
 
 # Display the DataFrame
 print(df_words)
@@ -13,15 +13,15 @@ edges = []
 for i in range(len(df_words)):
     # Split words of the current tweet
     words1 = set(eval(df_words.at[i, 'words']))
-    
+
     # Compare with subsequent tweets
-    for j in range(i+1, len(df_words)):
+    for j in range(i + 1, len(df_words)):
         # Split words of the other tweet
         words2 = set(eval(df_words.at[j, 'words']))
-        
+
         # Find common words
         common_words = words1.intersection(words2)
-        
+
         # If common words exist, add an edge
         if common_words:
             edges.append((i, j))
