@@ -39,11 +39,11 @@ def generate_graph(df_words):
             
             # If common words exist, add an edge
             if common_words:
-                edges.append((i, j, common_words))
+                edges.append((i, j))
 
-    # Write edges to a text file, also add the connecting word
+    # Write edges to a text file
     with open('temp/tweet.graph', 'w') as file:
         for edge in edges:
-            file.write(f"{edge[0]} {edge[1]} {edge[2]}\n")
+            file.write(f"{edge[0]} {edge[1]}\n")
 
     return df_words
