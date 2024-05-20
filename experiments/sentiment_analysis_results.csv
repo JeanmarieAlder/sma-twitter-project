@@ -1,0 +1,785 @@
+words,nltk_sentiment
+"['current', 'situation', 'awareness', 'less', 'stress', 'facilitate']",negative
+"['someone', 'affected', 'social', 'anxiety', 'wearing', 'face', 'mask', 'amazing', 'feel', 'slightly', 'hidden', 'fro']",positive
+"['must', 'bad', 'times', 'order', 'appreciate', 'good', 'depression']",negative
+"['anxiety', 'surrounding', 'bipolar', 'disease', 'flare', 'quite', 'badly', 'read']",negative
+"['oh', 'yes', 'sure', 'perfectly', 'happy', 'distress']",positive
+"['new', 'preprint', 'anxiety', 'risk', 'outbreak']",negative
+"['last', 'used', 'running', 'singing', 'ways', 'reducing', 'anxiety', 'due', 'pandemic']",negative
+"['people', 'living', 'continued', 'stress', 'economy', 'crisis', 'debt', 'loan', 'grant']",negative
+"['happy', 'baseball', 'back', 'game', 'season', 'causing', 'major', 'fantasy', 'league', 'anxiety', 'r']",positive
+"['new', 'article', 'mask', 'anxiety', 'please', 'share', 'help', 'struggling', 'anxiety', 'wearing', 'mask', 'mask']",positive
+"['summertime', 'challenge', 'much', 'stress', 'self', 'care', 'extremely', 'important', 'think']",positive
+"['blunt', 'u', 'happiness', 'one', 'u', 'smoke', 'u', 'make', 'come', 'back', 'wo']",positive
+"['community', 'group', 'ladies', 'distribute', 'food', 'distressed']",negative
+"['tweet', 'boring', 'know', 'boring', 'unemployment', 'theyre', 'damn', 'stressful']",negative
+"['yoga', 'classes', 'helping', 'police', 'personnel', 'combat', 'stress', 'prevention']",negative
+"['study', 'stress', 'motivation', 'exercise']",negative
+"['depression', 'mental', 'health', 'cause', 'immune', 'response', 'affect', 'fight']",negative
+"['welcome', 'world', 'mostly', 'stress', 'humiliation', 'universe']",negative
+"['great', 'sadness', 'read', 'hope', 'offer', 'b']",positive
+"['stay', 'fit', 'healthy', 'regular', 'meditation', 'home', 'drive', 'away', 'anxiety', 'stress']",positive
+"['expressed', 'happiness', 'encouraging', 'result', 'year', 'woman', 'fro']",positive
+"['video', 'post', 'may', 'wont', 'lose', 'economic', 'depression']",positive
+"['study', 'stress', 'motivation', 'exercise']",negative
+"['easy', 'ways', 'sleep', 'better', 'amid', 'mental', 'stress', 'due', 'pandemic', 'health']",positive
+"['threat', 'community', 'lead', 'worry', 'fear', 'sadness', 'even']",negative
+"['anxiety', 'insecurity', 'covid', 'times', 'pandemic']",negative
+"['like', 'mistress', 'sort', 'divorce']",positive
+"['strict', 'actually', 'add', 'anxiety', 'stress', 'manage']",negative
+"['times', 'biggest', 'source', 'happiness', 'news']",positive
+"['charcoal', 'refocus', 'anxiety', 'theyre', 'plus', 'taking']",negative
+"['ink', 'help', 'refocus', 'anxiety', 'theyre', 'plus']",positive
+"['discuss', 'impact', 'crisis', 'valuation', 'distressed', 'assets']",negative
+"['latest', 'spin', 'fool', 'us', 'actually', 'supporting', 'sadness']",negative
+"['time', 'high', 'stress', 'worry', 'tension', 'anger', 'rise']",negative
+"['please', 'aware', 'reading', 'misinformation', 'cause', 'lot', 'distress', 'follow', 'five']",negative
+"['expressed', 'happiness', 'encouraging', 'result', 'year', 'woman', 'fro']",positive
+"['shopping', 'stress', 'busy', 'plan', 'choose', 'shop']",negative
+"['actress', 'anxiety', 'pandemic']",negative
+"['first', 'time', 'pregnant', 'midst', 'salute', 'cannot', 'imagine', 'anxiety']",positive
+"['success', 'stress', 'via']",positive
+"['pregnant', 'new', 'shocking', 'anxiety', 'depression', 'pandemic']",negative
+"['happiness', 'journey']",positive
+"['ready', 'talk', 'mass', 'anxiety', 'produced', 'pandemic']",positive
+"['save', 'us', 'financial', 'distress', 'due', 'exorbitant', 'medical', 'two']",negative
+"['global', 'pandemic', 'rise', 'stress', 'global', 'supply', 'therefore']",negative
+"['know', 'speak', 'truth', 'pray', 'fight', 'depression']",negative
+"['brought', 'much', 'stress', 'anxiety', 'fear', 'like', 'get', 'day']",negative
+"['case', 'nothing', 'else', 'think', 'times', 'little', 'stress']",negative
+"['twitter', 'campaign', 'people', 'fight', 'stress']",negative
+"['grateful', 'health', 'happiness']",positive
+"['manage', 'stress', 'anxiety', 'times', 'focus', 'grateful']",negative
+"['anxiety', 'amid', 'pandemic', 'anxiety']",negative
+"['happiness', 'working', 'family']",positive
+"['coming', 'anxiety', 'depression', 'isolation', 'anxious', 'impact']",negative
+"['threat', 'community', 'lead', 'worry', 'fear', 'sadness', 'even']",negative
+"['recent', 'study', 'found', 'per', 'cent', 'people', 'across', 'anxiety']",negative
+"['nothing', 'hide', 'smile', 'smile', 'happiness', 'mask', 'fun', 'isolation']",positive
+"['virus', 'kill', 'people', 'depression', 'last', 'longer', 'open', 'busine']",negative
+"['stress', 'test', 'crisis', 'could', 'push', 'gross', 'bad']",negative
+"['great', 'depression', 'level', 'unemployment', 'rate', 'suffering', 'number', 'per']",negative
+"['health', 'anxiety', 'time', 'covid', 'covid', 'trump', 'pandemic']",negative
+"['people', 'level', 'mindfulness', 'experience', 'use', 'reduce', 'stress', 'life']",negative
+"['pandemic', 'add', 'stress', 'life', 'knowing', 'us', 'put', 'place', 'red']",negative
+"['new', 'disguised', 'painful', 'depression']",negative
+"['pregnant', 'stressful', 'pandemic']",negative
+"['pandemic', 'add', 'stress', 'life', 'knowing', 'us', 'put', 'place', 'red']",negative
+"['psychotherapy', 'teletherapy', 'help', 'overcome', 'anxiety', 'stress', 'coping']",negative
+"['mind', 'since', 'tropical', 'depression', 'prayer', 'somehow', 'hanna', 'get']",negative
+"['covid', 'anxiety', 'directly', 'related', 'job', 'impact', 'would', 'cause', 'company', 'department', 'shut']",negative
+"['charge', 'happiness', 'one', 'else', 'motivation', 'motivational']",positive
+"['noble', 'deed', 'may', 'blessed', 'happiness', 'prosperity']",positive
+"['reduce', 'anxiety', 'access', 'availability', 'quick', 'turnaround']",negative
+"['lack', 'lot', 'depression', 'included', 'lost', 'knowing', 'achieve']",negative
+"['anxiety', 'working', 'home', 'pandemic', 'work']",negative
+"['collide', 'anxiety', 'disproportionate', 'black', 'death', 'toll']",negative
+"['even', 'important', 'stressful', 'time']",negative
+"['financial', 'working', 'reduce', 'stress', 'due', 'governor']",negative
+"['new', 'study', 'syndrome', 'linked', 'stress', 'may', 'rise']",negative
+"['coming', 'psychologist', 'high', 'anxiety', 'vital']",positive
+"['fed', 'depression']",negative
+"['instead', 'leading', 'fight', 'pandemic', 'financial', 'distress', 'china']",negative
+"['telling', 'stop', 'watching', 'news', 'program', 'even', 'listening', 'radio', 'becoming', 'stressful']",negative
+"['cannot', 'lead', 'anxiety', 'fear', 'stigma']",positive
+"['busy', 'working', 'virtual', 'hormone', 'anxiety', 'stress', 'lack', 'energy']",negative
+"['many', 'people', 'sadness', 'amid', 'deal']",negative
+"['ridge', 'enjoy', 'well', 'break', 'stress', 'strain', 'clearly']",positive
+"['many', 'people', 'sadness', 'amid', 'deal']",negative
+"['stressful', 'time', 'live', 'lot', 'anxiety', 'depression', 'feeling', 'wishing', 'e']",negative
+"['let', 'eat', 'cake', 'nancy', 'pandemic', 'depression']",negative
+"['live', 'make', 'money', 'without', 'stress', 'click', 'link', 'crack', 'egg']",positive
+"['lot', 'anxiety', 'getting', 'back', 'work', 'today', 'good', 'worked', 'get']",positive
+"['twitter', 'campaign', 'people', 'fight', 'stress']",negative
+"['stress', 'disproportionately', 'high', 'impact', 'certain', 'minority', 'n']",negative
+"['setting', 'great', 'meanwhile', 'great', 'depression']",positive
+"['every', 'cold', 'cough', 'sneezing', 'dont', 'stress']",positive
+"['facing', 'extraordinary', 'stress', 'find']",negative
+"['seven', 'ways', 'effectively', 'cope', 'emotional', 'stress', 'fitness']",positive
+"['period', 'stressful', 'find', 'ways', 'expression', 'chil']",negative
+"['threat', 'community', 'lead', 'worry', 'fear', 'sadness', 'even']",negative
+"['difficult', 'cope', 'fear', 'anxiety', 'daily', 'general', 'sense', 'uncertainty']",negative
+"['great', 'handle', 'stress', 'crisis']",negative
+"['topic', 'q', 'deal', 'elderly', 'family', 'member', 'manic', 'depressive', 'anxiety', 'disorder']",negative
+"['good', 'morning', 'world', 'wish', 'productive', 'week', 'full', 'happiness']",positive
+"['free', 'join', 'us', 'tomorrow', 'taking', 'look', 'anxiety', 'depression', 'around']",neutral
+"['empathize', 'say', 'would', 'told', 'bout', 'overwhelming', 'anxiety', 'teacher', 'bout', 'ne']",negative
+"['trying', 'quell', 'anxiety', 'taking', 'care', 'first', 'known', 'positive', 'covid', 'tomorrow', 'watching', 'video']",positive
+"['fly', 'wall', 'health', 'anxiety', 'depression']",negative
+"['another', 'trooper', 'suicide', 'say', 'leading', 'depression']",negative
+"['consider', 'helpful', 'learn', 'manage', 'stress', 'wellness', 'health']",positive
+"['obsessive', 'compulsive', 'disorder', 'added', 'anxiety']",negative
+"['slim', 'stress', 'gaining', 'weight', 'shedding', 'program', 'book', 'appointment', 'call']",neutral
+"['train', 'mind', 'see', 'good', 'everything', 'positivity', 'choice', 'happiness', 'life']",positive
+"['depression', 'may', 'isolate', 'may', 'assume', 'negative', 'approach', 'life']",negative
+"['long', 'take', 'get', 'taste', 'back', 'realizing', 'food', 'responsible', 'happiness', 'c']",positive
+"['self', 'help', 'people', 'intellectual', 'disability', 'anxiety', 'sleep', 'feeling']",positive
+"['pandemic', 'taken', 'toll', 'us', 'past', 'stressful', 'anxious', 'daunting']",negative
+"['must', 'read', 'thread', 'cant', 'stress', 'important', 'everyone', 'understand', 'hundred']",positive
+"['stress', 'management', 'guide', 'people', 'recognize', 'physical', 'stress', 'headache', 'neck', 'shoulder', 'p']",negative
+"['like', 'war', 'medical', 'showing', 'post', 'traumatic', 'stress']",negative
+"['threat', 'community', 'lead', 'worry', 'fear', 'sadness', 'even']",negative
+"['medical', 'ambulance', 'staff', 'feeling', 'stress']",negative
+"['isolation', 'day', 'funny', 'beginning', 'pandemic', 'anxiety']",negative
+"['last', 'stressful', 'biggest', 'personal', 'blow', 'far', 'came', 'last', 'week']",negative
+"['colleague', 'recruiting', 'young', 'people', 'yo', 'distress', 'due']",negative
+"['great', 'sadness', 'report', 'friend', 'secretary', 'health']",positive
+"['jake', 'bitch', 'depression']",negative
+"['pandemic', 'add', 'stress', 'life', 'knowing', 'us', 'put', 'place', 'red']",negative
+"['inescapable', 'already', 'returned', 'cubicle', 'report', 'days', 'full', 'anxiety']",negative
+"['live', 'life', 'everything', 'miracle', 'depression', 'anxiety']",negative
+"['place', 'chill', 'handle', 'stress', 'anxiety', 'stupid']",negative
+"['everyone', 'world', 'stress', 'toilet', 'paper', 'bought']",negative
+"['given', 'still', 'stress', 'whether', 'moratorium']",negative
+"['work', 'stress', 'anxiety', 'via']",negative
+"['fun', 'workout', 'undergo', 'cracking', 'workout', 'whilst', 'relieving', 'stress']",positive
+"['fun', 'workout', 'undergo', 'cracking', 'workout', 'whilst', 'relieving', 'stress']",positive
+"['fun', 'workout', 'undergo', 'cracking', 'workout', 'whilst', 'relieving', 'stress']",positive
+"['emotional', 'freedom', 'anxiety', 'release', 'expert', 'listen', 'marketing']",positive
+"['pay', 'day', 'stressful', 'supposed', 'joyful', 'payday']",positive
+"['new', 'paper', 'anxiety', 'hate', 'negative', 'pandemic']",negative
+"['dont', 'forget', 'register', 'free', 'anxiety', 'depression', 'mental', 'health']",negative
+"['hope', 'understand', 'anxiety', 'family', 'kept', 'dark', 'family']",positive
+"['sick', 'hearing', 'holiday', 'turmoil', 'grateful', 'alive', 'holiday', 'home', 'stress', 'e']",positive
+"['fight', 'pandemic', 'global', 'pandemic', 'already', 'stressful', 'enough', 'dont', 'victim', 'dom']",negative
+"['help', 'reduce', 'teenage', 'depression', 'depression', 'shouldnt']",negative
+"['pandemic', 'made', 'anxiety', 'body', 'much', 'worse', 'harmless']",negative
+"['believe', 'deep', 'depression', 'mental', 'health', 'come', 'wit']",negative
+"['medical', 'staff', 'police', 'already', 'depression', 'due', 'loaded', 'work', 'support', 'pandemic']",negative
+"['higher', 'risk', 'stress', 'burnout', 'depression', 'amid', 'pandemic', 'study', 'show']",negative
+"['happiness', 'birthday']",positive
+"['pandemic', 'add', 'stress', 'life', 'knowing', 'us', 'put', 'place', 'red']",negative
+"['alcalde', 'de', 'en', 'de', 'twitter', 'deep', 'sadness', 'share']",negative
+"['threat', 'community', 'lead', 'worry', 'fear', 'sadness', 'even']",negative
+"['stressful', 'take', 'care', 'eat', 'well', 'sleep', 'well', 'think', 'well', 'dont', 'forget', 'work']",positive
+"['acute', 'stress', 'glaucoma', 'irreversible', 'yoga', 'care', 'ur', 'family']",negative
+"['psychotherapy', 'getting', 'better', 'sleep', 'insomnia', 'anxiety']",positive
+"['time', 'emotional', 'human', 'mind', 'must', 'weigh', 'equally', 'distress', 'delight', 'plight']",positive
+"['depression', 'post', 'per', 'report', 'community']",negative
+"['kindly', 'watch', 'stress']",positive
+"['new', 'converting', 'curmudgeon', 'post', 'industry', 'stress', 'test']",negative
+"['new', 'comment', 'becker', 'tissue', 'damage', 'oxidative', 'stress']",negative
+"['alma', 'mater', 'brief', 'reprieve', 'stress', 'racism', 'medley']",negative
+"['need', 'package', 'behavioral', 'health', 'substance', 'use', 'treatment', 'stress']",negative
+"['anxiety', 'likely', 'feel', 'men', 'trouble', 'sleeping']",negative
+"['theres', 'doubt', 'stress', 'significantly', 'help']",negative
+"['award', 'recipient', 'toxic', 'stress', 'experienced', 'racial']",positive
+"['jarring', 'day', 'news', 'quarter', 'million', 'new', 'new', 'great', 'depression', 'trump']",positive
+"['help', 'prepare', 'potential', 'financial', 'storm', 'stress', 'simulation', 'rea']",neutral
+"['us', 'worry', 'stress', 'affected', 'check', 'th']",negative
+"['elderly', 'suffer', 'depression', 'many', 'risk', 'suicide', 'another', 'reason', 'widespread']",negative
+"['global', 'collaboration', 'traumatic', 'stress', 'recruiting', 'short', 'survey']",negative
+"['iceland', 'relieve', 'stress', 'let', 'scream', 'therapy', 'v']",negative
+"['helpful', 'tip', 'coping', 'stress', 'response', 'regular', 'exercise', 'take', 'play', 'read', 'book', 'wa']",positive
+"['turned', 'upside', 'stress', 'anxiety', 'running', 'high', 'take']",negative
+"['opening', 'negative', 'like', 'stress', 'anxiety', 'overwhelm', 'even', 'depressive']",negative
+"['pandemic', 'anxiety', 'depression']",negative
+"['resilience', 'emotional', 'video', 'series', 'best', 'friend', 'stress', 'reduction', 'w']",positive
+"['al', 'hospital', 'may', 'almighty', 'make', 'day', 'happiness']",positive
+"['moment', 'empathy', 'may', 'need', 'possible', 'way', 'deal', 'stress', 'animosity', 'empathy']",negative
+"['trying', 'understanding', 'please', 'math', 'breathe', 'destress', 'stop', 'raging']",negative
+"['may', 'bring', 'happiness', 'pea']",positive
+"['bring', 'happiness', 'joy', 'life']",positive
+"['white', 'hot', 'rage', 'gut', 'sadness', 'time', 'overnight', 'camp', 'mask']",negative
+"['oh', 'boy', 'helping', 'anxiety', 'going', 'back', 'school']",positive
+"['patient', 'lad', 'town', 'district', 'suicide', 'due', 'stress']",negative
+"['us', 'good', 'nutrition', 'good', 'sleep', 'stress', 'management']",positive
+"['stress', 'affect', 'mental', 'health', 'find', 'works', 'help', 'someone', 'trust', 'check']",positive
+"['day', 'stretch', 'days', 'stressful', 'week', 'work', 'tired', 'che']",negative
+"['pursuit', 'vaccine', 'stress', 'importance', 'large', 'diverse', 'trial']",negative
+"['psychotherapy', 'teletherapy', 'help', 'overcome', 'anxiety', 'stress', 'coping']",negative
+"['today', 'live', 'manage', 'due', 'stress', 'tu']",negative
+"['pregnant', 'worried', 'project', 'rescue', 'reduce', 'stress', 'anxiety', 'learn']",negative
+"['stress', 'test', 'industry', 'learned', 'ho']",negative
+"['spoken', 'challenge', 'anxiety', 'depression']",negative
+"['alert', 'anxiety', 'panic', 'ways', 'dont', 'want']",negative
+"['active', 'learn', 'exercise', 'happiness']",positive
+"['covid', 'times', 'st', 'physical', 'medicine', 'open', 'help', 'back', 'pain', 'stress']",negative
+"['know', 'much', 'financial', 'stress', 'weigh', 'thats', 'weve', 'established', 'free']",positive
+"['resilience', 'emotional', 'video', 'series', 'brief', 'mindful', 'breathing', 'anxiety']",neutral
+"['know', 'stressful', 'time', 'school', 'district', 'staff', 'covid', 'initiative']",negative
+"['taking', 'anti', 'anxiety', 'well', 'tested']",negative
+"['many', 'fear', 'anger', 'loss', 'economic', 'anxiety']",negative
+"['recent', 'column', 'overview', 'impact', 'mental', 'stress']",negative
+"['anxiety', 'looking', 'mid', 'pandemic']",negative
+"['impacted', 'many', 'report', 'stress', 'anxiety', 'lived', 'pandemic']",negative
+"['tweet', 'contain', 'lead', 'economic', 'depression', 'resurgence', 'something', 'like']",negative
+"['weve', 'lucky', 'far', 'come', 'might', 'start', 'getting', 'stressful']",negative
+"['recovery', 'battle', 'anxiety', 'paranoia', 'depression']",negative
+"['recovery', 'battle', 'anxiety', 'paranoia', 'depression']",negative
+"['turning', 'moral', 'distress', 'moral', 'resilience', 'pandemic']",negative
+"['spike', 'anxiety', 'communication', 'far', 'greater', 'threat', 'global', 'h']",negative
+"['sedentary', 'us', 'president', 'working', 'stress']",negative
+"['august', 'start', 'national', 'wellness', 'month', 'everyone', 'lot', 'change', 'stress']",neutral
+"['way', 'shop', 'cook', 'interact', 'stressful']",negative
+"['stress', 'going', 'reduced', 'take', 'care']",positive
+"['hunger', 'stress', 'depression', 'also', 'health', 'many', 'people', 'must', 'die', 'call']",negative
+"['stressful', 'times', 'help', 'look', 'listen', 'link', 'calm', 'safe', 'listening']",positive
+"['change', 'one', 'biggest', 'stress', 'everyone', 'right']",negative
+"['world', 'hope', 'foundation', 'mental', 'health', 'n', 'happiness', 'workshop', 'underprivileged']",positive
+"['news', 'taking', 'break', 'anxiety', 'poor', 'sleep', 'anxiety', 'sleep']",negative
+"['see', 'snapping', 'distressed', 'people', 'cant', 'afford']",negative
+"['see', 'snapping', 'distressed', 'people', 'cant', 'afford', 'russia']",negative
+"['see', 'snapping', 'distressed', 'people', 'cant', 'afford', 'russia', 'sold']",negative
+"['see', 'snapping', 'distressed', 'people', 'cant', 'afford', 'russia', 'sold']",negative
+"['majority', 'people', 'due', 'covid', 'related', 'anxiety', 'complete', 'change']",negative
+"['severe', 'stress', 'system', 'remains', 'trouble']",negative
+"['mark', 'stress', 'importance', 'wearing', 'mask', 'reduce', 'spread', 'amid']",negative
+"['wall', 'street', 'booming', 'economic', 'depression']",negative
+"['stressful', 'cope', 'maintain', 'health']",negative
+"['anxiety', 'could', 'hit', 'hard', 'psychologist']",negative
+"['comes', 'vigilant', 'also', 'remain', 'calm', 'find', 'ways', 'reduce', 'stress', 'anxiety']",negative
+"['mask', 'fatigue', 'report', 'anxiety', 'shortness', 'breath']",negative
+"['normal', 'feel', 'stress', 'related', 'everyone', 'differently', 'stress', 'ways']",negative
+"['breathing', 'inner', 'peace', 'breathing', 'let', 'go', 'stress', 'anxiety', 'practice', 'quick']",neutral
+"['pandemic', 'stress', 'mental', 'health', 'protect']",negative
+"['expect', 'lots', 'anxiety']",negative
+"['right', 'via', 'depression']",negative
+"['like', 'said', 'economic', 'distress', 'isolation', 'lack', 'thereof']",negative
+"['current', 'pandemic', 'source', 'anxiety', 'family']",negative
+"['stress', 'smoking', 'helpful']",neutral
+"['enjoy', 'world', 'even', 'sadness', 'music', 'rock', 'cliche']",positive
+"['feeling', 'sad', 'depressed', 'stress', 'aging', 'read', 'review', 'new', 'book']",negative
+"['perfectionism', 'perfect', 'route', 'depression', 'fitness', 'corona']",positive
+"['refuse', 'let', 'take', 'joy', 'happiness', 'away', 'new', 'month', 'new', 'new', 'achieve', 'new', 'attitude', 'new']",positive
+"['struggling', 'isolation', 'stress', 'grief', 'dont', 'like', 'talking', 'phone']",negative
+"['thread', 'thing', 'one', 'lucky', 'pandemic', 'depression', 'weve', 'rent', 'collected']",negative
+"['like', 'plan', 'economics', 'depression']",negative
+"['anxiety', 'paranoid', 'irrational', 'fear', 'happen', 'anything', 'see', 'primal', 'f']",negative
+"['helpful', 'tip', 'coping', 'stress', 'response', 'regular', 'exercise', 'take', 'play', 'read', 'book', 'wa']",positive
+"['fear', 'anxiety', 'brought', 'major', 'like', 'pandemic', 'take', 'toll']",negative
+"['like', 'pretend', 'saved', 'great', 'depression', 'theyre', 'going', 'pretend', 'g']",positive
+"['recession', 'many', 'expect', 'experience', 'worst', 'recession', 'since', 'great', 'depression', 'th']",negative
+"['anxiety', 'peaking', 'potentially', 'first', 'shift', 'back', 'work', 'shielding', 'tomorrow', 'wouldnt', 'mind']",negative
+"['right', 'another', 'great', 'depression', 'thank']",positive
+"['countless', 'facing', 'extreme', 'distress', 'due', 'current', 'situation', 'fair', 'reduce']",negative
+"['needs', 'break', 'badly', 'stress', 'dead', 'infected', 'human']",negative
+"['music', 'great', 'healer', 'mood', 'stress', 'tell', 'us', 'favorite', 'help']",positive
+"['amidst', 'sadness', 'death', 'brought', 'excitement', 'hope']",negative
+"['lengthy', 'discussion', 'career', 'current', 'job', 'market', 'must', 'confess', 'feeling', 'stress', 'van']",negative
+"['ways', 'destress', 'reduce', 'anxiety', 'pandemic', 'eat', 'healthy', 'exercise', 'regularly', 'get', 'plenty', 'slee']",positive
+"['ways', 'destress', 'reduce', 'anxiety', 'pandemic', 'eat', 'healthy', 'exercise', 'regularly', 'get', 'plenty', 'slee']",positive
+"['understand', 'stress', 'financial', 'make', 'voice', 'sho']",negative
+"['stress', 'gardening', 'got', 'horticulture', 'experiential', 'learning', 'cleaning', 'rose']",negative
+"['raising', 'incredibly', 'stressful', 'daunting', 'undertaking', 'p']",negative
+"['ways', 'reduce', 'anxiety', 'getting', 'laid', 'pandemic', 'pandemic', 'anxiety']",negative
+"['well', 'new', 'great', 'depression', 'financially', 'mentally', 'physically', 'politically']",positive
+"['last', 'day', 'free', 'promotion', 'book', 'finding', 'happiness', 'covid', 'thanks']",positive
+"['depression', 'stress', 'rise', 'severe', 'disease', 'find']",negative
+"['health', 'depression', 'anxiety']",negative
+"['mental', 'distress', 'pandemic', 'among', 'us', 'without', 'condition']",negative
+"['people', 'isolation', 'loneliness', 'anxiety', 'future', 'overload', 'working', 'long', 'hour']",negative
+"['need', 'relief', 'stress', 'latest', 'check', 'snow', 'cam', 'right']",positive
+"['taking', 'elevator', 'anxiety', 'next', 'level', 'tech', 'company', 'solution']",positive
+"['lower', 'world', 'cannot', 'stress', 'enough', 'actual', 'saying', 'cant', 'b']",neutral
+"['jo', 'department', 'psychology', 'bath', 'university', 'help', 'anxiety', 'sur']",positive
+"['unprecedented', 'distressing', 'time', 'many', 'get', 'life', 'long', 'best', 'memory', 'today']",positive
+"['delighted', 'finally', 'share', 'paper', 'intolerance', 'uncertainty', 'distress', 'coping']",negative
+"['oh', 'god', 'anxiety', 'supposed', 'leader', 'screwed']",negative
+"['providing', 'much', 'relief', 'happiness', 'everyone', 'around', 'world', 'number', 'dog']",positive
+"['got', 'featured', 'impact', 'magazine', 'dont', 'stress', 'best', 'times']",negative
+"['providing', 'much', 'relief', 'happiness', 'everyone', 'around', 'world', 'number', 'dog']",positive
+"['anxiety', 'depression', 'role', 'inflammatory', 'clinical', 'angst', 'na']",negative
+"['got', 'featured', 'impact', 'magazine', 'dont', 'stress', 'best', 'times']",negative
+"['got', 'featured', 'impact', 'magazine', 'dont', 'stress', 'best', 'times']",negative
+"['twitter', 'campaign', 'people', 'fight', 'stress']",negative
+"['people', 'distress']",negative
+"['threat', 'community', 'lead', 'worry', 'fear', 'sadness', 'even']",negative
+"['thank', 'hockey', 'back', 'reprieve', 'fear', 'anxiety']",negative
+"['congress', 'take', 'action', 'expanded', 'relief', 'distressed', 'business', 'travel', 'industry', 'group']",positive
+"['anxiety', 'depression', 'role', 'role', 'inflammatory', 'clinical']",negative
+"['loss', 'normal', 'lead', 'anxiety', 'fear', 'worry']",negative
+"['hold', 'major', 'depression']",negative
+"['stress', 'doesnt', 'manifest', 'way', 'everyone', 'news', 'san', 'featured', 'h']",negative
+"['teens', 'dont', 'always', 'know', 'effectively', 'manage', 'anxiety', 'even', 'anger', 'come', 'feeling', 'isolated']",negative
+"['stress', 'many', 'already', 'face', 'spoke']",negative
+"['quarantine', 'diary', 'handling', 'fear', 'stress', 'sometimes', 'best', 'good', 'e']",positive
+"['responder', 'front', 'may', 'working', 'stressful']",negative
+"['stressful', 'job', 'world', 'go', 'home', 'already', 'wit']",negative
+"['suffering', 'depression']",negative
+"['click', 'participate', 'academic', 'research', 'min', 'relationship', 'among', 'stress', 'resilience']",negative
+"['take', 'care', 'take', 'care', 'business', 'stress', 'balance']",positive
+"['thank', 'making', 'whole', 'pandemic', 'thing', 'less', 'stressful', 'like', 'u']",positive
+"['stress', 'anxiety', 'uncertainty', 'leave', 'use', 'disorder', 'vulnerable', 'look']",negative
+"['stressful', 'times', 'good', 'sleep', 'important', 'ever', 'boost', 'immune', 'system', 'improve']",positive
+"['low', 'grade', 'depression', 'due', 'administration', 'racial', 'injustice']",negative
+"['surrounding', 'include', 'anxiousness', 'depression', 'frustration', 'normal', 'c']",negative
+"['financial', 'job', 'relationship', 'stress', 'safety', 'talk', 'intimate', 'partner']",neutral
+"['remember', 'biggest', 'stress', 'getting', 'real', 'id', 'deadline']",negative
+"['think', 'everybody', 'got', 'depression', 'suppose', 'difficult']",negative
+"['economic', 'stress', 'pandemic', 'among', 'across']",negative
+"['outbreak', 'impact', 'stress', 'epilepsy', 'epilepsy']",negative
+"['final', 'speaker', 'today', 'take', 'control', 'immense', 'stress', 'pro']",negative
+"['survey', 'impact', 'pandemic', 'stress']",negative
+"['people', 'life', 'blinded', 'stress', 'ache']",negative
+"['research', 'half', 'experience', 'anxiety', 'insomnia', 'depression', 'compulsive']",negative
+"['induced', 'stress', 'anxiety', 'negatively', 'affected', 'yet', 'many', 'mental', 'heal']",negative
+"['people', 'mental', 'health', 'substance', 'use', 'anxiety']",negative
+"['always', 'important', 'especially', 'face', 'added', 'stress', 'pandemic']",negative
+"['recent', 'survey', 'found', 'feeling', 'additional', 'stress', 'specifically']",negative
+"['mental', 'health', 'related', 'pandemic', 'especially', 'hard', 'people', 'depression']",negative
+"['anxiety', 'depression', 'doubled', 'young', 'people', 'impacted']",negative
+"['positive', 'aging', 'suitable', 'age', 'perfect', 'remedy', 'replace', 'anxiety']",positive
+"['good', 'quick', 'stress']",neutral
+"['suffering', 'depression', 'via']",negative
+"['understandable', 'many', 'people', 'may', 'feel', 'depression', 'distress', 'anxiety', 'pandemic', 'jo']",negative
+"['across', 'country', 'ways', 'help', 'handle', 'stress']",neutral
+"['chain', 'reaction', 'observing', 'financial', 'material', 'hardship', 'parent', 'distress', 'child', 'emotional']",negative
+"['youve', 'classic', 'anxiety', 'instead', 'taking', 'final', 'exam']",negative
+"['please', 'feel', 'free', 'use', 'share', 'coping', 'stress', 'pandemic', 'though']",positive
+"['june', 'said', 'future', 'nation', 'significant', 'source', 'stress', 'highest', 'ever', 'rep']",negative
+"['news', 'stress']",negative
+"['nearly', 'half', 'say', 'stress', 'level', 'related', 'pandemic', 'high', 'worried', 'impact']",negative
+"['depression', 'era', 'unemployment', 'signature']",negative
+"['depression', 'era', 'unemployment', 'signature']",negative
+"['everyone', 'stress', 'sadness', 'anxiety', 'time', 'time', 'apart', 'life', 'check', 'st']",negative
+"['worried', 'thats', 'worry', 'anxiety', 'two', 'actually', 'different', 'w']",negative
+"['agricultural', 'life', 'one', 'eminently', 'calculated', 'human', 'happiness', 'human', 'virtue', 'information', 'visit']",positive
+"['advice', 'cope', 'stress', 'stress']",negative
+"['current', 'world', 'quite', 'stressful', 'worry', 'going', 'rise']",negative
+"['spoke', 'depression', 'wake', 'ongoing', 'pandemic', 'movement']",negative
+"['reading', 'trigger', 'anxiety', 'us', 'build', 'resilience', 'reading']",negative
+"['people', 'anxiety', 'like', 'see', 'told', 'something', 'terrible', 'would', 'happen', 'pandemic']",negative
+"['wanting', 'boost', 'incredibly', 'important', 'research', 'racial', 'mental', 'health', 'distress', 'due']",positive
+"['follow', 'money', 'financial', 'stress']",negative
+"['suffering', 'depression', 'due', 'pandemic', 'hypocrisy']",negative
+"['cannot', 'stress', 'enough', 'digital', 'tech', 'powerful', 'way', 'keep', 'growing', 'expanding']",positive
+"['looking', 'destress', 'massage', 'follow', 'protect']",positive
+"['critical', 'component', 'deliberate', 'continuous', 'improvement', 'unlock', 'happiness', 'c']",positive
+"['providing', 'much', 'relief', 'happiness', 'everyone', 'around', 'world', 'number', 'dog']",positive
+"['providing', 'much', 'relief', 'happiness', 'everyone', 'around', 'world', 'number', 'dog']",positive
+"['providing', 'much', 'relief', 'happiness', 'everyone', 'around', 'world', 'number', 'dog']",positive
+"['helpful', 'tip', 'coping', 'stress', 'response', 'regular', 'exercise', 'take', 'play', 'read', 'book', 'watch']",positive
+"['spirit', 'anxiety', 'inspiring', 'obsess']",positive
+"['sleeping', 'less', 'manage', 'anxiety', 'uncertain', 'times', 'routine', 'even', 'simple', 'one']",negative
+"['frank', 'company', 'group', 'work', 'help', 'identify', 'stress']",neutral
+"['check', 'manage', 'stress']",negative
+"['health', 'freedom', 'happiness', 'optimism', 'gone', 'still']",positive
+"['culture', 'given', 'amount', 'social', 'anxiety', 'even', 'yo']",negative
+"['level', 'stressful', 'best', 'times', 'year', 'provided', 'added', 'complication']",positive
+"['national', 'happiness', 'day', 'make', 'happy', 'get', 'chicken', 'safe', 'chicken']",positive
+"['whats', 'happening', 'latest', 'thing', 'giving', 'real', 'anxiety', 'enough', 'deal', 'w']",positive
+"['cannot', 'teach', 'anybody', 'anything', 'make', 'think', 'depression']",negative
+"['welcome', 'home', 'happiness', 'son', 'hospital']",positive
+"['live', 'joy', 'kind', 'love', 'unconditionally', 'amy', 'depression', 'anxiety']",positive
+"['even', 'stress', 'always', 'option', 'look', 'around', 'us', 'appreciate', 'beauty']",positive
+"['depression', 'read']",negative
+"['emotional', 'freedom', 'anxiety', 'release', 'expert', 'listen', 'leadership']",positive
+"['never', 'much', 'anxiety', 'plane', 'suck']",negative
+"['quick', 'stress', 'reduction', 'unsettling', 'times', 'thank', 'god', 'coach']",positive
+"['thanks', 'covid', 'back', 'school', 'way', 'stressful']",negative
+"['know', 'quarantine', 'increase', 'productivity', 'lower', 'stress', 'even', 'save', 'money']",positive
+"['health', 'stress', 'importance', 'data', 'based', 'g']",negative
+"['vital', 'business', 'ended', 'stress', 'account']",negative
+"['low', 'cost', 'acupuncture', 'clinic', 'alleviate', 'anxiety', 'stress', 'trauma', 'along']",negative
+"['lot', 'ways', 'deal', 'anxiety', 'difficult', 'times', 'continue', 'reading']",negative
+"['mask', 'health', 'anxiety', 'worry', 'covid', 'mask', 'problem']",negative
+"['beach', 'day', 'relax', 'stress']",neutral
+"['happy', 'people', 'wishing', 'safe', 'healthy', 'stress', 'free', 'day']",positive
+"['least', 'assignment', 'open', 'book', 'exam', 'form', 'depression']",negative
+"['feel', 'pandemic', 'stress', 'help', 'thrive']",neutral
+"['dealing', 'added', 'stress', 'since', 'outbreak', 'taking', 'time', 'assess', 'e']",negative
+"['emotionally', 'intelligent', 'way', 'cope', 'pandemic', 'stress', 'thinking', 'journey', 'rather']",positive
+"['happiness', 'found', 'even', 'times', 'one', 'turn', 'light', 'albus']",positive
+"['brink', 'mental', 'health', 'crisis', 'many', 'increasing', 'stress']",negative
+"['situation', 'stressful', 'time', 'everyone', 'young', 'people', 'familiar', 'routine', 'w']",negative
+"['situation', 'stressful', 'time', 'everyone', 'protect', 'reach']",negative
+"['always', 'offer', 'full', 'refund', 'cancel', 'due', 'covid', 'lots', 'anxiety', 'mome']",negative
+"['tired', 'anxiety', 'well', 'safely', 'imagine', 'trying', 'sleep']",positive
+"['anxiety', 'depression']",negative
+"['anxiety', 'depression', 'society']",negative
+"['one', 'distress', 'made', 'uniquely', 'unfortunate', 'year', 'otherwise', 'struck', 'every', 'year', 'past']",negative
+"['sadness', 'know', 'happiness']",positive
+"['totally', 'get', 'anxiety']",negative
+"['pandemic', 'affecting', 'mental', 'health', 'many', 'people', 'help', 'manage', 'stress']",neutral
+"['investment', 'great', 'concerned', 'traditional', 'depression']",positive
+"['ball', 'stress', 'need', 'decide']",negative
+"['one', 'important', 'anxiety', 'times', 'remember']",neutral
+"['distressed', 'learn', 'fire', 'accident', 'center']",negative
+"['blessing', 'quarantine', 'room', 'alone', 'photography', 'depression']",negative
+"['physical', 'health', 'issue', 'stress', 'global', 'pandemic', 'taking', 'toll', 'mental', 'health']",negative
+"['dangerous', 'depression', 'suicidal', 'worse', 'u', 'die', 'b']",negative
+"['threat', 'community', 'lead', 'worry', 'fear', 'sadness', 'even']",negative
+"['sudden', 'shift', 'anxiety', 'increasing', 'kindness', 'explore']",positive
+"['stressful', 'story', 'strain']",negative
+"['hey', 'want', 'help', 'promote', 'positivity', 'decrease', 'viewer', 'anxiety', 'ar']",positive
+"['panic', 'anxiety', 'depression', 'affect', 'people', 'become', 'generational', 'trauma']",negative
+"['maybe', 'freedom', 'upcoming', 'depression', 'loneliness', 'depression', 'song']",negative
+"['sir', 'assuming', 'grave', 'also', 'severe', 'stress']",negative
+"['help', 'pet', 'separation', 'anxiety', 'via']",positive
+"['stress', 'anxiety', 'related']",negative
+"['looking', 'forward', 'capacity', 'also', 'appreciate', 'anxiety', 'staff', 'lea']",positive
+"['alert', 'help', 'pet', 'separation', 'anxiety', 'global', 'pandemic', 'news']",positive
+"['isolation', 'anxiety', 'reality', 'many', 'people', 'autism', 'community', 'thats', 'persistent', 'reality']",negative
+"['difficult', 'cope', 'fear', 'anxiety', 'daily', 'general', 'sense', 'uncertainty']",negative
+"['ways', 'manage', 'anxiety', 'strength', 'find', 'new', 'ways', 'calm', 'schedule', 'try']",positive
+"['good', 'anxiety', 'lot', 'right', 'better', 'chance', 'dying']",positive
+"['made', 'pregnancy', 'even', 'stressful', 'need', 'see', 'happy']",positive
+"['anxiety', 'going', 'back', 'school', 'cut', 'hair', 'cent', 'scissors']",negative
+"['toxic', 'stress', 'exactly', 'daughter', 'heart', 'breaking', 'scary', 'help']",negative
+"['overview', 'respond', 'obvious', 'increase', 'stress', 'way', 'tha']",negative
+"['home', 'senior', 'living', 'lee', 'woodruff', 'stress']",negative
+"['financial', 'stress', 'affecting', 'secure', 'likely']",negative
+"['react', 'stressful', 'different', 'ways', 'help', 'child', 'cope', 'sticking', 'routine']",negative
+"['stressful', 'part', 'moving', 'times', 'designing', 'new', 'maintain']",negative
+"['one', 'disaster', 'another', 'want', 'keep', 'anxiety', 'high', 'wonder', 'health']",negative
+"['stress', 'health', 'everything', 'hear', 'episode']",negative
+"['corporate', 'goliath', 'insurance', 'company', 'work', 'may', 'soon', 'laying', 'people', 'stress']",negative
+"['imagine', 'provided', 'true', 'inclusive', 'new', 'deal', 'great', 'depression']",positive
+"['stress', 'take', 'toll', 'pandemic', 'even', 'without', 'getting', 'new', 'study', 'found', 'higher', 'broken']",negative
+"['new', 'course', 'today', 'handling', 'anxiety', 'build', 'emotional']",neutral
+"['meditation', 'awesome', 'awesome', 'way', 'relieve', 'stress', 'times']",positive
+"['june', 'position', 'paper', 'crossed', 'atlantic', 'sea', 'stress']",negative
+"['threat', 'community', 'lead', 'worry', 'fear', 'sadness', 'even']",negative
+"['please', 'dont', 'give', 'number', 'suffering', 'depression', 'result', 'th']",neutral
+"['optimist', 'thinking', 'positively', 'surely', 'drive', 'stress', 'pressure', 'away']",positive
+"['may', 'lord', 'may', 'get', 'lots', 'happiness', 'good', 'health', 'life']",positive
+"['anxiety', 'hit', 'roof', 'presser', 'good', 'sign', 'one', 'good', 'news', 'late', 'night']",positive
+"['toxic', 'stress', 'brought', 'pandemic', 'affect', 'brains', 'future']",negative
+"['get', 'rid', 'anxiety', 'stress', 'impact', 'meditation', 'routine', 'daily']",negative
+"['found', 'people', 'know', 'less', 'stress', 'exhibit']",negative
+"['say', 'anxiety', 'around', 'personal', 'since', 'hit', 'according']",negative
+"['click', 'learn', 'making', 'money', 'without', 'stress']",positive
+"['mentally', 'strong', 'people', 'stress', 'trauma', 'anxiety', 'depression']",negative
+"['productive', 'stress', 'trauma', 'anxiety', 'depression']",negative
+"['may', 'peace', 'harmony', 'health', 'happiness', 'prevail', 'may', 'smile']",positive
+"['anxiety', 'level', 'indicator']",negative
+"['facing', 'stress', 'n', 'frustration', 'due', 'university', 'exam', 'help', 'us', 'bring', 'th']",negative
+"['organization', 'help', 'reduce', 'anxiety', 'read', 'full', 'article', 'bu']",positive
+"['organization', 'help', 'reduce', 'anxiety', 'read', 'full', 'article', 'bu']",positive
+"['organization', 'help', 'reduce', 'anxiety', 'read', 'full', 'article', 'bu']",positive
+"['pregnant', 'seeing', 'higher', 'depression', 'anxiety', 'pandemic', 'according', 'new', 'ca']",negative
+"['paisa', 'paisa', 'paisa', 'happiness', 'got', 'amount', 'ur', 'office', 'drawer']",positive
+"['probably', 'lot', 'less', 'exercise', 'bit', 'eating', 'boredom', 'stress', 'ti']",negative
+"['probably', 'lot', 'less', 'exercise', 'bit', 'eating', 'boredom', 'stress', 'ti']",negative
+"['probably', 'lot', 'less', 'exercise', 'bit', 'eating', 'boredom', 'stress', 'ti']",negative
+"['know', 'young', 'person', 'struggling', 'anxiety', 'bereavement', 'school', 'related', 'anger']",negative
+"['moral', 'stress', 'amongst', 'guide', 'collaboration']",negative
+"['every', 'time', 'enter', 'crowded', 'even', 'mask', 'feel', 'anxiety', 'crawling', 'people']",negative
+"['may', 'lord', 'steal', 'give', 'love', 'peace', 'happiness', 'holy']",positive
+"['think', 'one', 'biggest', 'understanding', 'value', 'happiness', 'b']",positive
+"['wishing', 'happy', 'may', 'auspicious', 'occasion', 'bring', 'hope', 'courage', 'happiness', 'unbound']",positive
+"['official', 'post', 'doc', 'ad', 'finally', 'come', 'join', 'us', 'help', 'us', 'great', 'examining', 'stress']",positive
+"['social', 'relief', 'distress', 'money', 'depressing', 'post', 'office', 'thing', 'failing', 'people', 'sent', 'aw']",negative
+"['honorable', 'sir', 'academic', 'year', 'totally', 'free', 'stress']",positive
+"['stress', 'stage', 'set']",negative
+"['honorable', 'sir', 'academic', 'year', 'totally', 'free', 'stress']",positive
+"['know', 'stressful', 'times', 'upsetting', 'many', 'people', 'particular']",negative
+"['survey', 'crisis', 'added', 'whole', 'new', 'level', 'anxiety', 'worry', 'especially', 'try']",negative
+"['may', 'push', 'one', 'two', 'young', 'people', 'across', 'world', 'anxiety', 'depression', 'survey']",negative
+"['geopolitical', 'impact', 'unclear', 'economy', 'system', 'stress', 'c']",negative
+"['quarantine', 'saved', 'lot', 'stress', 'keep', 'birthday', 'wont']",neutral
+"['reduce', 'anxiety']",negative
+"['ah', 'great', 'love', 'constant', 'anxiety', 'us', 'live', 'vulnerable', 'people']",positive
+"['going', 'back', 'school', 'stressful', 'especially', 'added', 'uncertainty', 'surrounding', 'pandemic']",negative
+"['stress', 'challenge', 'business', 'continuity', 'world', 'economic', 'forum', 'recently', 'cope']",negative
+"['half', 'young', 'population', 'across', 'world', 'possibly', 'subject', 'anxiety', 'depression', 'novel']",negative
+"['type', 'diabetes', 'unhealthy', 'coping', 'early', 'life', 'stress', 'stress']",negative
+"['schedule', 'appointment', 'today', 'yoga', 'anxiety', 'family']",negative
+"['anxiety', 'depression', 'health', 'prose', 'language', 'society']",negative
+"['less', 'stress', 'better']",neutral
+"['cut', 'stress', 'work', 'cha', 'freshly', 'coffee', 'wonderful', 'day', 'safety']",positive
+"['everything', 'needs', 'stress', 'relief']",positive
+"['new', 'report', 'family', 'stress', 'risk', 'domestic', 'abuse', 'education']",negative
+"['stress', 'people', 'people', 'lost', 'income', 'home']",negative
+"['help', 'cope', 'anxiety']",positive
+"['help', 'cope', 'anxiety']",positive
+"['pain', 'anxiety', 'sleepless', 'nights', 'tortured', 'never', 'think']",negative
+"['may', 'lord', 'fill', 'home', 'lots', 'happiness', 'joy', 'happy']",positive
+"['government', 'unwind', 'handle', 'collection', 'process', 'deal', 'distressed', 'customer']",negative
+"['impact', 'every', 'second', 'youth', 'subject', 'depression', 'survey']",negative
+"['may', 'festival', 'bring', 'happiness', 'amusement', 'joy', 'success', 'bless', 'lord', 'always']",positive
+"['donated', 'distressed', 'flour', 'donated', 'mask']",negative
+"['may', 'lord', 'fill', 'home', 'lots', 'happiness', 'happy', 'wishing']",positive
+"['emotional', 'freedom', 'anxiety', 'release', 'expert', 'listen', 'coaching']",positive
+"['series', 'rural', 'distress', 'phone']",negative
+"['half', 'youth', 'population', 'subject', 'anxiety']",negative
+"['take', 'look', 'short', 'guide', 'difference', 'recession', 'depression', 'impact']",negative
+"['aside', 'flat', 'life', 'school', 'anxiety', 'health']",negative
+"['reading', 'trigger', 'anxiety', 'us', 'build', 'resilience']",negative
+"['economy', 'saw', 'worse', 'slump', 'even', 'great', 'depression', 'relative', 'recovery']",negative
+"['people', 'cant', 'wear', 'face', 'mask', 'cover', 'disability', 'severe', 'distress', 'link']",negative
+"['friend', 'would', 'say', 'tough', 'stressful', 'time', 'x']",negative
+"['seem', 'long', 'time', 'depression', 'along', 'tu']",negative
+"['need', 'outlet', 'anxiety', 'learn', 'navigate', 'turn', 'p']",negative
+"['threat', 'community', 'lead', 'worry', 'fear', 'sadness', 'even']",negative
+"['lot', 'pressure', 'pelvis', 'go', 'pee', 'lot', 'anxiety', 'vote']",negative
+"['stressful', 'added', 'anxiety', 'anywhere', 'n']",negative
+"['anxiety', 'type', 'cancer', 'related', 'please', 'call', 'us']",negative
+"['happiness', 'handmade', 'go', 'local', 'community', 'buy', 'direct']",positive
+"['many', 'people', 'anxiety', 'isolation', 'tell', 'us', 'care', 'support']",positive
+"['great', 'sadness', 'today', 'confirm']",positive
+"['tune', 'today', 'learn', 'help', 'stress', 'pandemic', 'free']",positive
+"['day', 'mixed', 'unimaginable', 'stress', 'student']",negative
+"['wont', 'file', 'tomorrow', 'either', 'matter', 'going', 'get', 'depression']",negative
+"['pandemic', 'likely', 'give', 'rise', 'wave', 'distressed', 'looking']",negative
+"['times', 'stress', 'uncertainty', 'someone', 'towards', 'another', 'may', 'purely', 'outward', 'expression', 'th']",negative
+"['feeling', 'distressed', 'way', 'assessed', 'may', 'ask', 'revision', 'decision']",negative
+"['distressed', 'join', 'us', 'discuss']",negative
+"['amid', 'mass', 'death', 'economic', 'seen', 'since', 'great', 'depression', 'rising', 'unemployment', 'impoverishment']",negative
+"['covid', 'ward', 'dance', 'movie', 'relieve', 'mental', 'stress', 'patient']",negative
+"['stressless', 'stress', 'free', 'loll', 'big']",positive
+"['enjoy', 'trump', 'heinous', 'great', 'depression']",positive
+"['depression', 'us', 'hide', 'world', 'pass', 'message', 'along', 'everyone', 'due', 'complex']",negative
+"['site', 'also', 'much', 'emotional', 'make', 'already', 'stressful', 'exam', 'year']",negative
+"['help', 'cope', 'stress', 'anxiety', 'remain', 'calm', 'strong', 'faith', 'th']",positive
+"['doubt', 'like', 'countless', 'brother', 'forced', 'appeal', 'anxiety']",negative
+"['spirit', 'president', 'unsuited', 'deal', 'great', 'depression', 'unfit']",positive
+"['know', 'stressful', 'times', 'upsetting', 'many', 'people', 'particular']",negative
+"['game', 'cost', 'little', 'happiness', 'joy', 'fulfillment', 'end', 'wort']",positive
+"['mental', 'health', 'invisible', 'therefore', 'important', 'us', 'stress']",negative
+"['stress', 'trauma', 'anxiety', 'depression']",negative
+"['depression', 'dementia', 'cancer', 'flat']",negative
+"['starting', 'university', 'autumn', 'could', 'face', 'anxiety', 'isolation', 'loneliness']",negative
+"['anxiety', 'nature']",negative
+"['orange', 'energy', 'red', 'happiness', 'joy']",positive
+"['causing', 'anxiety', 'depression', 'read', 'depression', 'research']",negative
+"['financial', 'support', 'help', 'available', 'financial', 'distress', 'help', 'f']",positive
+"['young', 'likely', 'experienced', 'high', 'depression', 'anxiety', 'loneliness']",negative
+"['talking', 'lessen', 'distress', 'avoid', 'reach', 'someone']",negative
+"['early', 'life', 'stress', 'chronic', 'disease', 'untreated']",negative
+"['living', 'chronic', 'stress', 'psychology', 'today', 'trump']",negative
+"['one', 'easily', 'overcome', 'quarantine', 'stress', 'following', 'easy', 'process', 'maintain', 'healthy']",positive
+"['breaking', 'mindful', 'extraordinary', 'disruption', 'business', 'anxiety', 'causing']",negative
+"['depression', 'inequity', 'education']",negative
+"['dos', 'stay', 'mentally', 'healthy', 'stressful', 'information', 'ca']",negative
+"['saying', 'money', 'cant', 'buy', 'happiness', 'joss', 'case', 'although', 'c']",negative
+"['depression', 'without', 'prior', 'warning', 'could', 'made', 'worse', 'tune']",negative
+"['life', 'mental', 'stress', 'significantly', 'number', 'shown', 'yoga', 'may', 'help']",positive
+"['reduce', 'anxiety', 'people', 'know', 'process', 'place', 'handle', 'situation', 'mor']",negative
+"['people', 'politicize', 'weve', 'depression', 'weve']",negative
+"['need', 'new', 'narrative', 'distress', 'replace', 'one', 'individual', 'need', 'human', 'connect']",negative
+"['helping', 'elderly', 'people', 'cope', 'stress', 'distressed', 'family']",negative
+"['threat', 'community', 'lead', 'worry', 'fear', 'sadness', 'even']",negative
+"['read', 'helpful', 'assist', 'coping', 'anxiety']",positive
+"['anybody', 'distressed', 'c']",negative
+"['true', 'real', 'effect', 'stress', 'anxiety', 'depression', 'extremely']",negative
+"['causing', 'stress', 'disruption', 'young', 'follow', 'help', 'protect']",neutral
+"['set', 'happiness', 'indicator', 'thank']",positive
+"['life', 'love', 'depression']",positive
+"['happy', 'hermit', 'anxiety']",positive
+"['separation', 'family', 'added', 'another', 'layer', 'stress', 'pandemic']",negative
+"['cannot', 'stress', 'enough', 'importance', 'quote', 'within', 'current', 'climate', 'hysteria']",negative
+"['support', 'people', 'economic', 'distress', 'due', 'insurance', 'plan', 'big']",negative
+"['advised', 'us', 'first', 'survey', 'touchstone', 'mental', 'distress', 'raising', 'around']",negative
+"['teach', 'us', 'mental', 'health', 'isolation', 'walrus', 'stress', 'isolation']",negative
+"['legacy', 'well', 'taken', 'care', 'exposure', 'affected', 'stress', 'minuscule']",positive
+"['working', 'home', 'dont', 'outlet', 'talking', 'staff', 'destress', 'sai']",neutral
+"['community', 'transmission', 'business', 'usual', 'anxiety', 'high', 'gather']",negative
+"['first', 'official', 'teacher', 'workday', 'today', 'nut', 'stress', 'weve', 'got']",negative
+"['cancer', 'depression', 'dementia', 'health', 'vagus', 'nerve']",negative
+"['dogs', 'pet', 'video', 'unsung', 'anyone', 'anxiety']",negative
+"['depression', 'mental', 'health', 'spike', 'suicide', 'ideation', 'amid']",negative
+"['interesting', 'article', 'regarding', 'employee', 'anxiety', 'help', 'manage', 'stress', 'move', 'next', 'stage']",positive
+"['fake', 'stop', 'trying', 'cause', 'depression', 'anxiety', 'people', 'sad', 'disgusting']",negative
+"['never', 'told', 'anxiety']",positive
+"['may', 'prosperous', 'year', 'ahead', 'full', 'hope', 'happiness', 'happy', 'new', 'year', 'everybody', 'stay', 'healthy']",positive
+"['fear', 'anxiety', 'disease', 'devastating', 'cause', 'sharp', 'particularly', 'uncertain', 'times']",negative
+"['always', 'open', 'click', 'link', 'known', 'help', 'aid', 'stress', 'anxiety']",negative
+"['knew', 'stress', 'thats', 'already', 'high', 'around', 'time', 'school', 'year', 'could', 'rise', 'new', 'well']",negative
+"['yet', 'another', 'stress', 'anxiety', 'rise', 'burden', 'weve', 'got', 'find']",negative
+"['threat', 'community', 'lead', 'worry', 'fear', 'sadness', 'even']",negative
+"['gourmet', 'junk', 'food', 'help', 'tame', 'anxiety', 'pressure']",negative
+"['happiness', 'let', 'learn', 'achieve', 'life']",positive
+"['still', 'relevant', 'today', 'testing', 'recession', 'depression']",negative
+"['facing', 'extraordinary', 'stress', 'find']",negative
+"['stress', 'pandemic', 'stress']",negative
+"['human', 'craving', 'breath', 'fresh', 'air', 'walk', 'around', 'mall', 'without', 'anxiety']",positive
+"['must', 'everything', 'country', 'stressful', 'united']",negative
+"['know', 'stressful', 'times', 'upsetting', 'many', 'people', 'particular']",negative
+"['medical', 'refuse', 'allow', 'family', 'inside', 'facility', 'stress']",negative
+"['calling', 'vaccine', 'trial', 'time', 'anxiety', 'affected']",negative
+"['six', 'young', 'ranging', 'anxiety', 'depression', 'attributable']",negative
+"['significant', 'psychological', 'distress', 'amongst', 'working', 'context']",negative
+"['influence', 'nursing', 'staff', 'working', 'stress', 'level', 'pandemic']",negative
+"['share', 'wedding', 'saying', 'feel', 'additional', 'stress']",negative
+"['week', 'pretty', 'stressful', 'weekend', 'mood', 'work', 'week']",neutral
+"['stress', 'anxiety', 'would', 'like', 'speak', 'someone', 'listen', 'yo']",negative
+"['new', 'single', 'social', 'distance', 'deal', 'stress', 'writing']",negative
+"['overwhelming', 'possibility', 'cause', 'stress', 'feel', 'use', 'fact']",negative
+"['health', 'would', 'like', 'invite', 'stress', 'building', 'resilience']",positive
+"['health', 'would', 'like', 'invite', 'stress', 'building', 'resilience']",positive
+"['blueprint', 'leadership', 'burnout', 'moral', 'distress', 'among', 'nursing']",negative
+"['emotional', 'stress', 'may', 'lead', 'smaller', 'born']",negative
+"['motive', 'happiness', 'diet', 'tough', 'times']",positive
+"['young', 'people', 'avoid', 'depression']",negative
+"['could', 'talk', 'depression', 'anxiety']",negative
+"['threat', 'community', 'lead', 'worry', 'fear', 'sadness', 'even']",negative
+"['seeing', 'lot', 'mood', 'depression', 'psychiatric']",negative
+"['think', 'family', 'vulnerable', 'high', 'risk', 'cannot', 'stress', 'enough', 'one']",negative
+"['feel', 'seen', 'ongoing', 'stress', 'raging', 'pandemic', 'physical']",negative
+"['midst', 'use', 'help', 'cope', 'anxiety', 'stress']",negative
+"['listening', 'depression', 'people', 'w', 'arthritis']",negative
+"['closed', 'stress', 'increase', 'risk', 'abuse', 'neglect']",negative
+"['alarming', 'devastating', 'facing', 'right', 'depression']",negative
+"['anxiety', 'anxiety']",negative
+"['know', 'survive', 'pandemic', 'youve', 'survive', 'depression', 'right']",negative
+"['stress', 'eater', 'eating', 'stress', 'food']",negative
+"['look', 'page', 'read', 'top', 'help', 'mask', 'anxiety', 'weve', 'also', 'got', 'discount']",positive
+"['navigate', 'together', 'new', 'normal', 'stress', 'overwhelming', 'travel', 'business']",negative
+"['end', 'sight', 'stress', 'taking', 'mental', 'toll', 'work']",negative
+"['increasing', 'stress', 'strain', 'sense', 'school', 'food']",negative
+"['help', 'manage', 'stress']",neutral
+"['brought', 'unprecedented', 'stress', 'society', 'large', 'perhaps']",negative
+"['due', 'return', 'school', 'days', 'stressful', 'enough', 'time', 'young']",negative
+"['common', 'issue', 'depression', 'anxiety', 'last']",negative
+"['hurricane', 'season', 'stressful', 'even', 'pandemic', 'worry', 'learn', 'plan']",negative
+"['thanks', 'honest', 'personal', 'message', 'stress', 'overwork']",positive
+"['stress', 'normal', 'part', 'life', 'certain', 'healthy', 'however', 'stress', 'becomes']",negative
+"['twice', 'many', 'depression', 'time', 'last', 'year']",negative
+"['impact', 'depression', 'youth', 'topic', 'summer', 'school']",negative
+"['many', 'living', 'stress', 'uncertainty', 'ever', 'many']",negative
+"['going', 'add', 'additional', 'stress', 'difficult', 'flu', 'season']",negative
+"['depression', 'doubled', 'pandemic', 'appalling', 'given', 'like']",negative
+"['help', 'manage', 'stress', 'sh']",neutral
+"['driving', 'dramatic', 'depression', 'anxiety', 'among', 'college', 'w', 'th']",negative
+"['say', 'pandemic', 'stressful', 'would', 'dramatic', 'understatement']",negative
+"['pandemic', 'turning', 'upside', 'urge', 'alert', 'anxiety', 'among', 'c']",positive
+"['weve', 'hit', 'pandemic', 'wall', 'roughly', 'one', 'anxiety', 'disorder']",negative
+"['try', 'understand', 'nature', 'business', 'stress', 'within', 'community', 'especially', 'comes']",negative
+"['something', 'quite', 'right', 'society', 'come', 'consider', 'normal', 'depression']",negative
+"['new', 'episode', 'tomorrow', 'talking', 'anxiety']",negative
+"['stress', 'affecting', 'drinking', 'behaviour', 'differ', 'men', 'find']",negative
+"['health', 'community', 'care', 'say', 'really', 'hard', 'anxiety']",positive
+"['level', 'bring', 'back', 'excess', 'due', 'stress', 'malnutrition']",negative
+"['sherlock', 'depression', 'allegedly', 'pandemic', 'depression']",negative
+"['times', 'despair', 'little', 'happiness', 'keep', 'alive']",positive
+"['times', 'stress', 'like', 'may', 'tempting', 'management', 'eliminate', 'maintenance', 'short']",negative
+"['even', 'normal', 'times', 'new', 'school', 'year', 'starting', 'stressful', 'enough', 'hope', 'post', 'w']",negative
+"['thankful', 'situation', 'stress']",positive
+"['know', 'stressful', 'times', 'upsetting', 'many', 'people', 'particular']",negative
+"['health', 'council', 'sa', 'expressed', 'sadness', 'increase', 'number', 'health', 'dying']",negative
+"['health', 'council', 'sa', 'expressed', 'sadness', 'increase', 'number', 'health', 'dying']",negative
+"['unusually', 'stressful', 'environment', 'large', 'number', 'people', 'around', 'world']",negative
+"['due', 'flood', 'many', 'living', 'stress', 'postpone', 'neet']",negative
+"['true', 'anxiety', 'big', 'part', 'window', 'ta']",positive
+"['health', 'care', 'really', 'wealth', 'care', 'know', 'happiness', 'health', 'wealth', 'wellness', 'diabetic']",positive
+"['play', 'dogs', 'dont', 'one', 'get', 'one', 'get', 'threw', 'stress', 'yo']",negative
+"['new', 'study', 'found', 'depression', 'doubled', 'pandemic', 'almost', 'said']",negative
+['destress'],neutral
+"['threat', 'community', 'lead', 'worry', 'fear', 'sadness', 'even']",negative
+"['new', 'office', 'national', 'statistics', 'ons', 'suggest', 'number', 'dealing', 'depression']",negative
+"['offering', 'unusual', 'way', 'destress', 'amid', 'pandemic', 'group', 'offering', 'put', 'people']",neutral
+"['amma', 'happiness', 'received', 'welfare', 'pension', 'another', 'received', 'lea']",positive
+"['sadness', 'hear', 'veteran', 'freedom', 'fighter', 'diplomat']",positive
+"['watch', 'watch', 'funny', 'movie', 'listen', 'uplifting', 'music', 'dont', 'stay', 'sadness', 'long']",positive
+"['hope', 'lord', 'everyone', 'life', 'infinite', 'happiness', 'remove']",positive
+"['chest', 'pain', 'anxiety', 'visit']",negative
+"['led', 'anxiety', 'around', 'supporting', 'care', 'needs', 'assure', 'every', 'measure', 'taken', 'keep']",positive
+"['happiness', 'business', 'happiness']",positive
+"['first', 'school', 'anxiety', 'dream', 'middle', 'morning', 'going', 'well', 'realize', 'one', 'w']",positive
+"['subconscious', 'mind', 'basic', 'oh', 'naked', 'anxiety', 'dream', 'last', 'night', 'dreamt', 'turned']",positive
+"['anything', 'positive', 'twitter', 'past', 'like', 'constant', 'loop', 'depression', 'anger']",negative
+"['getting', 'sick', 'covid', 'pandemic', 'extremely', 'stressful', 'havent', 'felt', 'sick']",negative
+"['filled', 'depression', 'country', 'recession', 'leave', 'one', 'doubt']",negative
+"['anxiety', 'last', 'one', 'couple', 'ago']",negative
+"['anxiety', 'depression']",negative
+"['may', 'lord', 'give', 'happiness']",positive
+"['suffer', 'mental', 'stress', 'fatigue', 'fight', 'clap']",negative
+"['manage', 'stress', 'pandemic', 'healthy', 'diet', 'regularly', 'getting']",neutral
+"['manage', 'stress', 'pandemic', 'healthy', 'diet', 'regularly', 'getting']",neutral
+"['antimasker', 'anxiety', 'attack', 'wear', 'mask']",negative
+"['may', 'power', 'deva', 'shree', 'destroy', 'enhance', 'happiness', 'create', 'goodness', 'around']",positive
+"['cope', 'stress', 'crisis', 'recent', 'times', 'aware', 'impact']",negative
+"['may', 'lord', 'bless', 'treasure', 'health', 'wealth', 'happiness', 'happy']",positive
+"['may', 'lord', 'bestow', 'happiness', 'wisdom', 'good', 'health', 'prosperity', 'happy']",positive
+"['make', 'event', 'talk', 'necessary', 'reduce', 'stress']",negative
+"['anxiety', 'depression', 'due', 'alone', 'number', 'people']",negative
+"['may', 'arrival', 'bring', 'wave', 'happiness', 'health', 'happy']",positive
+"['may', 'lord', 'bless', 'family', 'happiness', 'may', 'continue', 'protector', 'happy']",positive
+"['birthday', 'time', 'add', 'good', 'happiness', 'success', 'adventure', 'subtract', 'age', 'wha']",positive
+"['full', 'time', 'job', 'full', 'time', 'college', 'clinical', 'depression', 'w', 'life', 'truth', 'college']",negative
+"['deal', 'second', 'wave', 'anxiety', 'according', 'via']",negative
+"['poll', 'back', 'school', 'time', 'soon', 'well', 'usual', 'excitement', 'anxiety', 'added', 'concern']",positive
+"['journalism', 'malpractice', 'anxiety', 'work', 'conspiracy', 'throw']",negative
+"['depression', 'indigenous', 'youth']",negative
+"['happiness', 'good', 'health', 'prosperity', 'auspicious', 'occasion', 'may', 'world', 'bless']",positive
+"['occasion', 'wish', 'lord', 'home', 'full', 'happiness', 'prosperity']",positive
+"['may', 'bring', 'peace', 'happiness', 'upon', 'us', 'give', 'us', 'strength', 'fight', 'pandemic']",positive
+"['list', 'everyday', 'depression', 'anxiety']",negative
+"['year', 'end', 'suffering', 'wont', 'end', 'sadness', 'frustration', 'exhaustion', 'wont', 'end']",negative
+"['report', 'extremely', 'stress']",negative
+"['happy', 'may', 'bring', 'lots', 'happiness', 'life', 'also', 'ur']",positive
+"['happiness', 'good', 'health', 'prosperity', 'auspicious', 'occasion', 'may', 'world', 'bless']",positive
+"['pandemic', 'human', 'depression', 'punk', 'us', 'marshal', 'mornings']",negative
+"['stay', 'happy', 'stay', 'hospitality', 'hotel', 'luxury', 'happiness']",positive
+"['threat', 'community', 'lead', 'worry', 'fear', 'sadness', 'even']",negative
+"['suicide', 'covid', 'depression']",negative
+"['currently', 'giving', 'ulcer', 'constant', 'state', 'stress', 'anxiety', 'feel']",negative
+"['may', 'god', 'bless', 'family', 'fill', 'home', 'colors', 'happiness', 'joy']",positive
+"['dad', 'really', 'distressed', 'isolated', 'hospital', 'due', 'new']",negative
+"['auspicious', 'day', 'wish', 'good', 'health', 'happiness', 'prosperity', 'remember']",positive
+"['wishing', 'happiness', 'big', 'appetite', 'celebration']",positive
+"['psychotherapy', 'teletherapy', 'help', 'overcome', 'anxiety', 'stress', 'coping']",negative
+"['trying', 'find', 'happiness', 'learn', 'happy', 'people', 'detailed']",positive
+"['impact', 'causing', 'hardship', 'great', 'distress', 'trauma', 'li']",negative
+"['absolutely', 'unnecessary', 'immunity', 'stress', 'leaves', 'people', 'vulnerable']",negative
+"['oh', 'yeah', 'even', 'worse', 'second', 'wave', 'plus', 'even', 'worse', 'economic', 'depression', 'well']",negative
+"['report', 'extremely', 'read', 'stress']",negative
+"['weed', 'depression', 'heal', 'emotional', 'loss']",negative
+"['chaos', 'due', 'inequality', 'great', 'depression', 'era', 'unemployment', 'people', 'lose', 'lose', 'health']",negative
+"['fake', 'election', 'tied', 'foreign', 'via', 'anxiety']",negative
+"['anxiety', 'size', 'planet', 'nuclear', 'cant', 'afford', 'biological', 'warf']",negative
+"['uncertain', 'times', 'depression', 'real', 'impacted', 'us', 'speak', 'someone']",negative
+"['make', 'day', 'bright', 'sometimes', 'need', 'create', 'sun', 'depression', 'anxiety']",negative
+"['hope', 'miss', 'sad', 'dying', 'depression', 'crying']",negative
+"['negative', 'stress', 'dont', 'mess', 'around']",negative
+"['everyone', 'stress', 'differently', 'dont', 'suffer', 'silence']",neutral
+"['follow', 'us', 'resilience', 'anxiety']",negative
+['stress'],negative
+"['covid', 'depression', 'real', 'tell', 'ya']",negative
+"['stay', 'happy', 'stay', 'hospitality', 'hotel', 'luxury', 'happiness']",positive
+"['visiting', 'care', 'impose', 'prison', 'like', 'causing', 'distress']",negative
+"['stress', 'meet']",negative
+"['stress', 'meet']",negative
+"['related', 'stress', 'bank', 'stress', 'given', 'u', 'ur', 'ban']",negative
+"['training', 'ready', 'remote', 'position', 'dont', 'anxiety', 'go']",positive
+"['bearing', 'brunt', 'covid', 'toll', 'survey', 'anxiety']",negative
+"['deal', 'type', 'call', 'someone', 'already', 'anxiety', 'call', 'could']",negative
+"['ways', 'help', 'register', 'without', 'stress', 'click', 'link', 'follow']",positive
+"['bearing', 'brunt', 'covid', 'toll', 'survey', 'troubling', 'picture', 'growing', 'anxiety']",negative
+"['beauty', 'eye', 'anxiety', 'freedom', 'love']",positive
+"['help', 'cope', 'stress', 'anxiety', 'remain', 'calm', 'strong', 'faith', 'th']",positive
+"['lot', 'yesterday', 'train', 'anxiety', 'outdoor', 'club', 'extreme']",negative
+"['set', 'review', 'implementation', 'resolution', 'framework', 'stress', 'bank']",negative
+"['stop', 'stigma', 'depression', 'anxiety']",negative
+"['review', 'implementation', 'resolution', 'framework', 'related', 'stress', 'ba']",negative
+"['amid', 'pandemic', 'growing', 'anxiety', 'inability', 'concentrate', 'aged']",negative
+"['finance', 'minister', 'said', 'state', 'gradually', 'facing', 'financial', 'stress']",negative
+"['providing', 'stress', 'wellness', 'training']",neutral
+"['think', 'anxious', 'coming', 'semester', 'even', 'virtual', 'teaching', 'stressful', 'take']",negative
+"['pandemic', 'higher', 'depression', 'anxiety', 'eve']",negative
+"['midnight', 'bubble', 'gum', 'weekend', 'treat', 'stress', 'reliever']",positive
+"['successfully', 'channeled', 'anxiety', 'work', 'unreservedly', 'recommend', 'borscht']",positive
+"['understandable', 'youve', 'insomnia', 'stress', 'recently', 'pandemic', 'causing', 'concern', 'many', 'q']",negative
+"['light', 'depression', 'anxiety']",negative
+"['threat', 'community', 'lead', 'worry', 'fear', 'sadness', 'even']",negative
+"['poor', 'people', 'stress', 'deserve', 'better', 'future', 'put', 'suspend']",negative
+"['stress', 'immune', 'looking', 'immune', 'help']",positive
+"['um', 'unemploy', 'rate', 'bad', 'since', 'great', 'depression']",negative
+"['pandemic', 'politics', 'anxiety', 'alcohol']",negative
+"['everyone', 'differently', 'stressful', 'like', 'may', 'feel', 'anxiousness', 'anger', 'sadness']",negative
+"['dont', 'want', 'dwell', 'stress', 'question', 'see', 'opportunity', 'share', 'inform']",positive
+"['rising', 'stress', 'world', 'wash', 'soap']",negative
+"['anxiety', 'insomnia', 'pain', 'relief', 'give', 'organic', 'oil', 'new', 'gift', 'ca']",positive
+"['pandemic', 'politics', 'anxiety', 'alcohol']",negative
+"['session', 'victor', 'today', 'topic', 'manage', 'stress', 'burnout']",negative
+"['know', 'someone', 'coping', 'well', 'stress', 'free', 'anonymous', 'screening']",positive
+['stress'],negative
+"['politics', 'anxiety', 'alcohol', 'health']",negative
+"['pandemic', 'anxiety', 'politics', 'alcohol', 'health']",negative
+"['positive', 'test', 'news', 'synopsis', 'distressing']",positive
+"['study', 'anxiety', 'pandemic']",negative
+"['threat', 'community', 'lead', 'worry', 'fear', 'sadness', 'even']",negative
+"['never', 'never', 'usual', 'look', 'sadness', 'time', 'prime', 'r']",positive
+"['put', 'added', 'stress', 'defined', 'benefit', 'maintain', 'appropriate', 'read']",positive
+"['pandemic', 'politics', 'anxiety', 'alcohol', 'health']",negative
+"['anxiety', 'injury', 'monster', 'art', 'drawing', 'sketch', 'sketchbook', 'illustration']",negative
+"['parasite', 'stress', 'theory', 'robot', 'saying']",negative
+"['fog', 'distressing', 'neurological', 'apparent', 'tonight']",negative
+"['parasite', 'stress', 'theory', 'robot', 'saying']",negative
+"['depression', 'sudden']",negative
+"['hear', 'death', 'also', 'distressed', 'see', 'many', 'like']",negative
+"['helpful', 'tip', 'coping', 'stress', 'response', 'regular', 'exercise', 'take', 'play', 'read', 'book', 'wa']",positive
+"['people', 'everywhere', 'struggling', 'pandemic', 'stress', 'anxiety', 'recognize', 'love']",negative
+"['help', 'deal', 'stress', 'without', 'losing', 'mi']",positive

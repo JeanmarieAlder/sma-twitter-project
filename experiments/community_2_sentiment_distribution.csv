@@ -1,0 +1,4 @@
+nltk_sentiment,proportion
+negative,0.8686868686868687
+positive,0.12121212121212122
+neutral,0.010101010101010102
