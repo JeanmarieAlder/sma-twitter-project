@@ -79,6 +79,5 @@ def generate_communities(df_words):
     print("Please close the graph to continue the process...")
     plt.show()
 
-    input("stop")
 
     return(partition_named, df_words)
