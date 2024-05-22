@@ -72,9 +72,13 @@ def generate_communities(df_words):
     print(df_words[['words', 'community']])
 
     # Draw the graph with each community having a dedicated node color
-    # node_colors = [partition[node] for node in G.nodes()]
-    # nx.draw(G, with_labels=True, node_color=node_colors, cmap=plt.cm.tab10, width=0.2)
-    # print("Please close the graph to continue the process...")
-    # plt.show()
+    node_colors = [partition[node] for node in G.nodes()]
+    plt.figure(figsize=(12, 12))  # Adjust the size as needed
+    nx.draw(G, with_labels=True, node_color=node_colors, cmap=plt.cm.tab10, width=0.1)
+    plt.savefig("temp/community_graph.png", format="PNG", dpi=300)
+    print("Please close the graph to continue the process...")
+    plt.show()
+
+    input("stop")
 
     return(partition_named, df_words)

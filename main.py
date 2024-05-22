@@ -78,12 +78,17 @@ def main_modularity_gain():
     print("Community Detection")
     partition, df_words = generate_communities(df_words)
 
-    # 4. Classify Tweets
+    # 4. Analyse Community Detection Results
+    print()
+    print("Results Analysis")
+    nmi = compute_nmi(partition, df_words)
+    analyze_unclassified_tweets(partition, df_words)
+
+    # 5. Classify Tweets
     print()
     print("Classify Tweets")
     df_test = get_non_mental_health_tweets(df)
     df_test = get_sample_tweets(df_test, 5) #Test sample
-    
     df_results = classify_tweets(df_words, df_test, partition)
 
 
