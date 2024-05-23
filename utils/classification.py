@@ -1,6 +1,7 @@
 from datetime import datetime
 
 import networkx as nx
+import pandas as pd
 
 import community as community_louvain
 
@@ -28,6 +29,9 @@ def classify_tweets(df_words, df_test, partition):
     # Load the graph from tweet.graph
     G = nx.read_edgelist('temp/tweet.graph', nodetype=int)
 
+    # initialize link count:
+    df_words["use_count"] = 0
+
     # Loop through all tweets inside df_test
     for index, tweet in df_test.iterrows():
         new_tweet_id = max(G.nodes) + 1  # Assign a new ID to the tweet
@@ -51,6 +55,10 @@ def classify_tweets(df_words, df_test, partition):
                 if common_words:
                     # Add an edge between the new node and the similar node
                     G_copy.add_edge(new_tweet_id, node_id)
+                    # Update use_count in df_words for the existing node
+                    df_words.at[node_id, 'use_count'] += 1
+        # Group df_words by the 'community' column
+        grouped_df = df_words.groupby('community')
 
         # Determine the best community for the new tweet using modularity gain
         community_names = df_words['community'].unique()
@@ -68,6 +76,26 @@ def classify_tweets(df_words, df_test, partition):
 
         # Update df_test with the new tweet's community
         df_test.at[index, 'community'] = best_community
+    
+    # Iterate over each group
+    for community, group in grouped_df:
+        print(f"Community: {community}")
+        # Sort the group by 'use_count' in descending order and get the top 5 tweets
+        top_tweets = group.sort_values(by='use_count', ascending=False).head(5)
+        # Print the top tweets
+        for index, row in top_tweets.iterrows():
+            print(f"Tweet {index}: {row['words']} (use_count: {row['use_count']})")
+
+    # Open the file to write best words result
+    with open('temp/best_words.txt', 'w') as f:
+        # Iterate over each group
+        for community, group in grouped_df:
+            f.write(f"Community, Node ID, Words, Links\n")
+            # Sort the group by 'use_count' in descending order and get the top 5 tweets
+            top_tweets = group.sort_values(by='use_count', ascending=False).head(5)
+            # Print the top tweets
+            for index, row in top_tweets.iterrows():
+                f.write(f"{community}, {index}, {row['words']}, {row['use_count']}\n")
 
     # Print all rows of df_test with columns "words" and "community"
     # print(df_test[['words', 'community']])

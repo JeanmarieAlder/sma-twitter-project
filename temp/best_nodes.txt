@@ -1,0 +1,18 @@
+Community: sad, Top 5 nodes: [989, 954, 1164, 811, 975]
+Node: 989, Words: ['thanks', 'sad', 'day', 'people', 'get', 'accept', 'valid'], Centrality: 0.629374337221633
+Node: 954, Words: ['sad', 'see', 'sort', 'condolence', 'people', 'getting', 'tested', 'positive', 'doesnt', 'help'], Centrality: 0.6247368421052631
+Node: 1164, Words: ['ignorance', 'people', 'show', 'pandemic', 'sad', 'yes', 'get', 'yes', 'get'], Centrality: 0.6247368421052631
+Node: 811, Words: ['really', 'sad', 'need', 'keep', 'telling', 'people', 'wear', 'face', 'mask', 'w'], Centrality: 0.6244082062072593
+Node: 975, Words: ['sad', 'fact', 'day', 'sometimes', 'people', 'ask', 'something', 'future', 'work', 'pause'], Centrality: 0.6240799158780231
+Community: hope, Top 5 nodes: [721, 554, 730, 692, 579]
+Node: 721, Words: ['going', 'wipe', 'people', 'cant', 'much', 'hope'], Centrality: 0.6280423280423281
+Node: 554, Words: ['important', 'message', 'people', 'hope', 'everyone'], Centrality: 0.6270470153195985
+Node: 730, Words: ['open', 'new', 'people', 'new', 'hope', 'strength'], Centrality: 0.6260548523206751
+Node: 692, Words: ['message', 'hope', 'people', 'around', 'world', 'suffering'], Centrality: 0.6253951527924131
+Node: 579, Words: ['people', 'opportunity', 'make', 'money', 'hope'], Centrality: 0.6250658241179569
+Community: happy, Top 5 nodes: [363, 352, 339, 134, 303]
+Node: 363, Words: ['people', 'say', 'world', 'yet', 'happy', 'take', 'ground'], Centrality: 0.6300424628450106
+Node: 352, Words: ['happy', 'today', 'recognize', 'give', 'thanks', 'young', 'people'], Centrality: 0.6267159450897571
+Node: 339, Words: ['happy', 'see', 'something', 'goa', 'suppose', 'people', 'highlight'], Centrality: 0.6263852242744063
+Node: 134, Words: ['happy', 'people', 'today', 'opening', 'back'], Centrality: 0.6247368421052631
+Node: 303, Words: ['good', 'day', 'happy', 'people', 'happy', 'celebration', 'celebrate'], Centrality: 0.6247368421052631

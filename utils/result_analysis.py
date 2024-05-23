@@ -134,8 +134,8 @@ def analyze_best_nodes(partition, df_words):
     G = nx.read_edgelist('temp/tweet.graph', nodetype=int)
     
     # Compute centrality measures
-    degree_centrality = nx.degree_centrality(G)
-    betweenness_centrality = nx.betweenness_centrality(G)
+    # degree_centrality = nx.degree_centrality(G)
+    # betweenness_centrality = nx.betweenness_centrality(G)
     closeness_centrality = nx.closeness_centrality(G)
     
     # Initialize a dictionary to store the top nodes for each community
@@ -151,7 +151,7 @@ def analyze_best_nodes(partition, df_words):
     # For each community, find the top 5 nodes based on the centrality measure
     for community, nodes in nodes_by_community.items():
         # Get centrality values for nodes in the community
-        community_centrality = {node: betweenness_centrality[node] for node in nodes}
+        community_centrality = {node: closeness_centrality[node] for node in nodes}
         
         # Sort nodes by centrality value in descending order
         sorted_nodes = sorted(community_centrality.items(), key=lambda item: item[1], reverse=True)
@@ -164,7 +164,7 @@ def analyze_best_nodes(partition, df_words):
         print(f"Community: {community}, Top 5 nodes: {nodes}")
         for node in nodes:
             if node in df_words.index:
-                print(f"Node: {node}, Words: {df_words.at[node, 'words']}")
+                print(f"Node: {node}, Words: {df_words.at[node, 'words']}, Centrality: {closeness_centrality[node]}")
             else:
                 print(f"Node: {node}, Words: Not found in df_words")
 
@@ -175,9 +175,9 @@ def analyze_best_nodes(partition, df_words):
             f.write(f"Community: {community}, Top 5 nodes: {nodes}\n")
             for node in nodes:
                 if node in df_words.index:
-                    f.write(f"Node: {node}, Words: {df_words.at[node, 'words']}\n")
+                    f.write(f"Node: {node}, Words: {df_words.at[node, 'words']}, Centrality: {closeness_centrality[node]}\n")
                 else:
                     f.write(f"Node: {node}, Words: Not found in df_words\n")
-    print("Betweenness centraility results saved to temp/best_nodes.txt")
+    print("Closeness centraility results saved to temp/best_nodes.txt")
     
     return top_nodes
