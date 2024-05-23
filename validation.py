@@ -1,4 +1,4 @@
-
+from sklearn.metrics import confusion_matrix
 import pandas as pd
 
 
@@ -258,14 +258,14 @@ def compare_simple_method_balanced():
     # Write results to csv file
     df_test.to_csv('temp/df_test_with_predictions.csv', index=False)
 
-    # Print the test tweet counts and predictions for validation
-    # print("Test tweet counts and predictions:")
-    # for counts in test_tweet_counts:
-    #     print(f"Tweet: {counts['tweet']}")
-    #     print(f"  - Happy count: {counts['happy_count']}")
-    #     print(f"  - Hope count: {counts['hope_count']}")
-    #     print(f"  - Sad count: {counts['sad_count']}")
-    #     print(f"  - Prediction: {counts['prediction']}")
+    # Compute confusion matrix with rows being "validation_prediction" and cols "community"
+    y_true = df_test['community']
+    y_pred = df_test['validation_prediction']
+    conf_matrix = confusion_matrix(y_true, y_pred, labels=["happy", "hope", "sad"])
+
+    print("Confusion Matrix (between community method and simple method):")
+    print(conf_matrix)
+
 
 
 if __name__ == "__main__":

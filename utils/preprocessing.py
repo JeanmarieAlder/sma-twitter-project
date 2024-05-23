@@ -161,6 +161,131 @@ def preprocess_tweets(df):
     return df, df_words
 
 
+def preprocess_tweets_balanced(df):
+    """
+    Preprocess tweets DataFrame by cleaning text, extracting emojis, and filtering tweets.
+    Additionnally balance tweets to have an equal number for each class.
+    
+    Parameters:
+    - df (pandas.DataFrame): Input DataFrame containing tweet data.
+
+    Returns:
+    - df (pandas.DataFrame): Processed input DataFrame (slightly modified with new columns).
+    - df_words (pandas.DataFrame): DataFrame containing tweets for the initial community detection.
+    """
+    print("preprocess_tweets()")
+
+    # Save original text to a different column, as text column get overwritten
+    df["original_text"] = df["text"]
+
+    # Extract emojis from the 'text' column
+    df['emojis'] = df['text'].apply(extract_emojis)
+
+    # Clean the 'text' column
+    df['text'] = df['text'].apply(clean_text)
+
+    # Extract words from the 'text' column
+    df['words'] = df['text'].str.split()
+
+    # Concatenate emojis into the 'words' column
+    df['words'] = df.apply(lambda row: row['words'] + row['emojis'], axis=1)
+    
+    # Filter tweets containing exact matches to mental health words
+    filtered_df = df[df['words'].apply(lambda words: any(word in words for word in mental_health_words))]
+
+    # Get tweets that do not contain mental health words and have at least 4 words
+    non_mental_health_df = get_non_mental_health_tweets(df)
+
+    # Sample n tweets from non_mental_health_df
+    non_mental_health_sample = get_sample_tweets(non_mental_health_df, 0)
+
+    # Concatenate the filtered_df with the non_mental_health_sample
+    combined_df = pd.concat([filtered_df, non_mental_health_sample], ignore_index=True)
+
+    # Reset index of the combined DataFrame
+    combined_df.reset_index(drop=True, inplace=True)
+
+    # Initialize an object with three arrays for each sentiment
+    classified_tweets = {
+        "happy": [],
+        "hope": [],
+        "sad": []
+    }
+
+    # # Iterate over each tweet in the combined DataFrame
+    # for index, row in combined_df.iterrows():
+    #     words = row['words'] if isinstance(row['words'], list) else eval(row['words'])  # Ensure words is a list
+    #     if 'happy' in words:
+    #         classified_tweets['happy'].append(row)
+    #     elif 'hope' in words:
+    #         classified_tweets['hope'].append(row)
+    #     elif 'sad' in words:
+    #         classified_tweets['sad'].append(row)
+    # Iterate over each tweet in the combined DataFrame
+    for index, row in combined_df.iterrows():
+        words = row['words'] if isinstance(row['words'], list) else eval(row['words'])  # Ensure words is a list
+        class_words = mental_health_words
+        count_class_words = sum(word in words for word in class_words)
+        
+        # Only classify tweets that contain exactly one of the class words
+        if count_class_words == 1:
+            if 'happy' in words:
+                classified_tweets['happy'].append(row)
+            elif 'hope' in words:
+                classified_tweets['hope'].append(row)
+            elif 'sad' in words:
+                classified_tweets['sad'].append(row)
+
+    # Compute the minimum number of tweets across all sentiments
+    min_tweet_count = min(len(classified_tweets['happy']), len(classified_tweets['hope']), len(classified_tweets['sad']))
+
+    # Balance the tweets by removing extra tweets from sentiments that have more than the minimum count
+    balanced_tweets = []
+    for sentiment in classified_tweets:
+        sentiment_tweets = classified_tweets[sentiment]
+        if len(sentiment_tweets) > min_tweet_count:
+            # Sort tweets by the number of words (ascending) and keep only the top min_tweet_count tweets
+            sentiment_tweets.sort(key=lambda tweet: len(tweet['words']))
+            sentiment_tweets = sentiment_tweets[:min_tweet_count]
+        balanced_tweets.extend(sentiment_tweets)
+
+    # Create a DataFrame from the balanced tweets
+    balanced_df = pd.DataFrame(balanced_tweets)
+
+    # Extract words from the 'text' column of balanced_df
+    df_words = pd.DataFrame({'words': balanced_df['text'].str.split()})
+
+    # Add the 'user_location' column to df_words
+    df_words['user_location'] = balanced_df['user_location']
+    
+    # Save df_words to a temporary CSV file inside 'temp' folder.
+    df_words.to_csv('temp/df_words.csv', index=False)
+
+    # Count words
+    word_counts = {}
+    for text in df['text']:
+        words = text.split()
+        for word in words:
+            if word in word_counts:
+                word_counts[word] += 1
+            else:
+                word_counts[word] = 1
+
+    # Create a dictionary to store the counts of mental health words
+    mental_health_counts = {}
+
+    # Populate the mental_health_counts dictionary with counts from word_counts
+    for word in mental_health_words:
+        mental_health_counts[word] = word_counts.get(word, 0)
+
+    # Print the count of each mental health word
+    print("Count of mental health words: ")
+    for word, count in mental_health_counts.items():
+        print(f"{word}: {count}")
+
+    return df, df_words
+
+
 def load_tweets():
     """
     Load tweets from the input CSV file.

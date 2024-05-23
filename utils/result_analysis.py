@@ -125,3 +125,59 @@ def analyze_unclassified_tweets(partition, df_words):
     print("\nNumber of tweets without mental health words in each community:")
     for community, count in unclassified_tweet_counts.items():
         print(f"Community {community}: {count} tweets")
+
+
+def analyze_best_nodes(partition, df_words):
+    print("analyze_best_nodes()")
+    
+    # Load the graph from tweet.graph
+    G = nx.read_edgelist('temp/tweet.graph', nodetype=int)
+    
+    # Compute centrality measures
+    degree_centrality = nx.degree_centrality(G)
+    betweenness_centrality = nx.betweenness_centrality(G)
+    closeness_centrality = nx.closeness_centrality(G)
+    
+    # Initialize a dictionary to store the top nodes for each community
+    top_nodes = {community: [] for community in set(partition.values())}
+    
+    # Group nodes by community
+    nodes_by_community = {}
+    for node, community in partition.items():
+        if community not in nodes_by_community:
+            nodes_by_community[community] = []
+        nodes_by_community[community].append(node)
+    
+    # For each community, find the top 5 nodes based on the centrality measure
+    for community, nodes in nodes_by_community.items():
+        # Get centrality values for nodes in the community
+        community_centrality = {node: betweenness_centrality[node] for node in nodes}
+        
+        # Sort nodes by centrality value in descending order
+        sorted_nodes = sorted(community_centrality.items(), key=lambda item: item[1], reverse=True)
+        
+        # Get the top 5 nodes
+        top_nodes[community] = [node for node, _ in sorted_nodes[:5]]
+    
+    # Print the top 5 nodes for each community
+    for community, nodes in top_nodes.items():
+        print(f"Community: {community}, Top 5 nodes: {nodes}")
+        for node in nodes:
+            if node in df_words.index:
+                print(f"Node: {node}, Words: {df_words.at[node, 'words']}")
+            else:
+                print(f"Node: {node}, Words: Not found in df_words")
+
+    # Open the file in write mode
+    with open('temp/best_nodes.txt', 'w') as f:
+        # Print the top 5 nodes for each community and save to file
+        for community, nodes in top_nodes.items():
+            f.write(f"Community: {community}, Top 5 nodes: {nodes}\n")
+            for node in nodes:
+                if node in df_words.index:
+                    f.write(f"Node: {node}, Words: {df_words.at[node, 'words']}\n")
+                else:
+                    f.write(f"Node: {node}, Words: Not found in df_words\n")
+    print("Betweenness centraility results saved to temp/best_nodes.txt")
+    
+    return top_nodes
